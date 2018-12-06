@@ -1,22 +1,28 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import popper from 'popper.js';
-import jquery from 'jquery';
-import axios from 'axios';
+import global_mixin from './global_mixin';
 
 // Bootstrap
-window.popper = popper;
-window.$ = window.jQuery = jquery;
-import 'bootstrap';
+import BootstrapVue from 'bootstrap-vue'
+Vue.use(BootstrapVue);
 
 // App Styles
 import './assets/style.scss';
 
-// Axios
-window.axios = axios;
+// BUG https://github.com/Leaflet/Leaflet/issues/4968
+import { L } from 'vue2-leaflet';
+delete L.Icon.Default.prototype._getIconUrl;
+
+L.Icon.Default.mergeOptions({
+    iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
+    iconUrl: require('leaflet/dist/images/marker-icon.png'),
+    shadowUrl: require('leaflet/dist/images/marker-shadow.png')
+});
 
 Vue.config.productionTip = false;
+
+Vue.mixin(global_mixin);
 
 new Vue({
   router,
