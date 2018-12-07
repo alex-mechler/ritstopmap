@@ -7,16 +7,14 @@
                                   :attribution="osm_attribution"></l-tile-layer>
                     <l-marker v-for="stop in stops" :lat-lng="[stop.loc.x, stop.loc.y]"
                               @click="showDetails(stop)">
-                        <l-icon :icon-size="[32, 32]" :icon-anchor="[16, 16]"
-                                icon-url="https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/Item_0707.png"></l-icon>
+                        <l-icon :icon-size="[32, 32]" :icon-anchor="[16, 16]" :icon-url="getIcon(stop.icon)"></l-icon>
                     </l-marker>
                 </l-map>
             </div>
             <div class="sidebar col-2 p-0">
                 <div class="inner p-2">
                     <div v-for="stop in stops" class="media">
-                        <img class="mr-1"
-                             src="https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/Item_0707.png">
+                        <img class="mr-1" :src="getIcon(stop.icon)">
                         <div class="media-body">
                             <strong>{{ stop.name }}</strong>
                             <p>{{ stop.quest }}</p>
@@ -39,6 +37,7 @@
 <script>
     import {LMap, LTileLayer, LMarker, LIcon} from 'vue2-leaflet';
     import 'leaflet/dist/leaflet.css'
+    import icons from '../data/icons.json';
 
     export default {
         name: 'home',
@@ -64,6 +63,13 @@
             showDetails(stop) {
                 this.focus = stop;
                 this.$refs.stopDetail.show()
+            },
+            getIcon(icon_code) {
+                if (icon_code in icons) {
+                    return icons[icon_code];
+                }
+
+                return icons['icon_unchecked'];
             }
         },
         components: {
