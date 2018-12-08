@@ -1,24 +1,23 @@
 <template>
-    <div class="home">
-        <div class="row master-container m-0">
-            <div class="col-10 p-0">
-                <l-map class="map" ref="map" :zoom="15" :center="[43.085188, -77.671559]">
+    <div class="container-fluid h-100">
+        <div class="row h-100">
+            <div class="col-10 h-100 p-0">
+                <l-map class="h-100" ref="map" :zoom="15" :center="[43.085188, -77.671559]">
                     <l-tile-layer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
                                   :attribution="osm_attribution"></l-tile-layer>
                     <l-marker v-for="stop in stops" :lat-lng="[stop.loc.x, stop.loc.y]"
                               @click="showDetails(stop)">
-                        <l-icon :icon-size="[32, 32]" :icon-anchor="[16, 16]" :icon-url="getIcon(stop.icon)"></l-icon>
+                        <l-icon :icon-size="[32, 32]" :icon-anchor="[16, 16]"
+                                :icon-url="getIcon(stop.icon)"></l-icon>
                     </l-marker>
                 </l-map>
             </div>
-            <div class="sidebar col-2 p-0">
-                <div class="inner p-2">
-                    <div v-for="stop in stops" class="media">
-                        <img class="mr-1" :src="getIcon(stop.icon)">
-                        <div class="media-body">
-                            <strong>{{ stop.name }}</strong>
-                            <p>{{ stop.quest }}</p>
-                        </div>
+            <div class="col-2 h-100 p-3 sidebar">
+                <div v-for="stop in stops" class="media">
+                    <img class="mr-1" :src="getIcon(stop.icon)">
+                    <div class="media-body">
+                        <strong>{{ stop.name }}</strong>
+                        <p>{{ stop.quest }}</p>
                     </div>
                 </div>
             </div>
@@ -81,27 +80,19 @@
     }
 </script>
 
+<style>
+    html, body, #app {
+        height: 100%;
+    }
+</style>
+
 <style lang="scss" scoped>
-    .master-container {
-        width: 100%;
-        height: 100vh;
-        .map {
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-        }
-        .sidebar {
-            .inner {
-                overflow-y: scroll;
-                max-height: 100%;
-                width: 100%;
-            }
-            .media img {
-                width: 32px;
-                height: 32px;
-            }
+    .sidebar {
+        max-height: 100%;
+        overflow-y: scroll;
+        .media img {
+            width: 32px;
+            height: 32px;
         }
     }
 </style>
