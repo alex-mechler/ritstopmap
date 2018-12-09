@@ -1,30 +1,142 @@
 {
-  "icon_unchecked": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/btn_help.png",
-  "icon_trash": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/MysteryItem.png",
-  "icon_stardust": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/stardust_painted.png",
-  "icon_silver_pinap": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/Item_0707.png",
-  "icon_golden_razzberry": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/Item_0706.png",
-  "icon_rare_candy": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/Item_1301.png",
-  "icon_spinda": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/spinda_bg.png",
-  "icon_voltorb": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_100_00.png",
-  "icon_gastly": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_092_00.png",
-  "icon_onix": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_095_00.png",
-  "icon_golduck": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_055_00.png",
-  "icon_larvitar": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_246_00.png",
-  "icon_kanto_starter": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/ic_grass.png",
-  "icon_jynx": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_124_00.png",
-  "icon_porygon": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_137_00.png",
-  "icon_mankey": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_056_00.png",
-  "icon_machop": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_066_00.png",
-  "icon_electrabuzz": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_125_00.png",
-  "icon_eevee": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_133_00.png",
-  "icon_feebas": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_349_00.png",
-  "icon_misdreavus": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_200_00.png",
-  "icon_dratini": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_147_00.png",
-  "icon_numel": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_322_00.png",
-  "icon_vulpix_poliwag": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/ic_grass.png",
-  "icon_magikarp": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_129_00.png",
-  "icon_exeggcute_lanturn": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/ic_grass.png",
-  "icon_magmar": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_126_00.png",
-  "icon_chansey": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_113_00.png"
+  "icon_unchecked": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/btn_help.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_trash": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/MysteryItem.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_stardust": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/stardust_painted.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_silver_pinap": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/Item_0707.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_golden_razzberry": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/Item_0706.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_rare_candy": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/Item_1301.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_spinda": {
+    "url": "https://cdn.jsdelivr.net/gh/alex-mechler/ritstopmap/icons/327.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_voltorb": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_100_00.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_gastly": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_092_00.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_onix": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_095_00.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_golduck": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_055_00.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_larvitar": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_246_00.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_kanto_starter": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/ic_grass.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_jynx": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_124_00.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_porygon": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_137_00.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_mankey": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_056_00.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_machop": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_066_00.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_electrabuzz": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_125_00.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_eevee": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_133_00.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_feebas": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_349_00.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_misdreavus": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_200_00.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_dratini": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_147_00.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_numel": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_322_00.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_vulpix_poliwag": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/ic_grass.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_magikarp": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_129_00.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_exeggcute_lanturn": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/ic_grass.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_magmar": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_126_00.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_chansey": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_113_00.png",
+    "height": 32,
+    "width": 32
+  }
 }

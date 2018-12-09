@@ -7,8 +7,7 @@
                                   :attribution="osm_attribution"></l-tile-layer>
                     <l-marker v-for="stop in filteredStops" :v-key="stop.id" :lat-lng="[stop.loc.x, stop.loc.y]"
                               @click="showDetails(stop)">
-                        <l-icon :icon-size="[32, 32]" :icon-anchor="[16, 16]"
-                                :icon-url="getIcon(stop.icon)"></l-icon>
+                        <l-icon :icon-size="[getIcon(stop.icon).width, getIcon(stop.icon).height]" :icon-url="getIcon(stop.icon).url"></l-icon>
                     </l-marker>
                     <l-control>
                         <b-button variant="leaflet" @click="sidebar = !sidebar">
@@ -32,7 +31,7 @@
                     </span>
                 </div>
                 <div v-for="stop in filteredStops" :v-key="stop.id" class="media">
-                    <img class="mr-1" :src="getIcon(stop.icon)">
+                    <div class="mr-1 quest-icon" v-bind:style="{ 'background-image': 'url(' + getIcon(stop.icon).url + ')' }"></div>
                     <div class="media-body">
                         <strong>{{ stop.name }}</strong>
                         <p>{{ stop.quest }}</p>
@@ -267,9 +266,11 @@
             flex: 0;
             padding: 0;
         }
-        .media img {
+        .quest-icon {
             width: 32px;
             height: 32px;
+            background-size: cover;
+            background-position: center;
         }
     }
 
