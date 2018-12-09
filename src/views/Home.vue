@@ -31,7 +31,7 @@
                     </span>
                 </div>
                 <div v-for="stop in filteredStops" :v-key="stop.id" class="media">
-                    <div class="mr-1 quest-icon" v-bind:style="{ 'background-image': 'url(' + getIcon(stop.icon).url + ')' }"></div>
+                    <div class="mr-1 quest-icon" :style="{ 'background-image': 'url(' + getIcon(stop.icon).url + ')' }"></div>
                     <div class="media-body">
                         <strong>{{ stop.name }}</strong>
                         <p>{{ stop.quest }}</p>
@@ -83,7 +83,7 @@
             <div class="row" v-for="quest in quests">
                 <div class="col">
                     <div class="media">
-                        <img class="mr-3" :src="getIcon(quest.icon)">
+                        <div class="quest-icon mr-3" :style="{ 'background-image': 'url(' + getIcon(quest.icon).url + ')' }"></div>
                         <div class="media-body">
                             <strong>{{ quest.quest }}</strong>
                             <p>{{ quest.reward }}</p>
@@ -266,12 +266,13 @@
             flex: 0;
             padding: 0;
         }
-        .quest-icon {
-            width: 32px;
-            height: 32px;
-            background-size: cover;
-            background-position: center;
-        }
+    }
+
+    .quest-icon {
+        width: 32px;
+        height: 32px;
+        background-size: cover;
+        background-position: center;
     }
 
     .btn-leaflet {
@@ -285,10 +286,6 @@
     }
 
     #modalFilter {
-        img {
-            width: 32px;
-            height: 32px;
-        }
         .button-col {
             flex: 0 0;
         }
