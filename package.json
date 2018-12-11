@@ -15,6 +15,7 @@
     "sass-loader": "^7.1.0",
     "underscore": "^1.9.1",
     "vue": "^2.5.17",
+    "vue-analytics": "^5.16.1",
     "vue-router": "^3.0.1",
     "vue2-leaflet": "^1.2.3"
   },

@@ -1,11 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import global_mixin from './global_mixin';
-
-// Bootstrap
-import BootstrapVue from 'bootstrap-vue'
-Vue.use(BootstrapVue);
+import global_mixin from './global_mixin'
+import VueAnalytics from 'vue-analytics'
+import './bootstrap'
 
 // App Styles
 import './assets/style.scss';
@@ -20,9 +18,22 @@ L.Icon.Default.mergeOptions({
     shadowUrl: require('leaflet/dist/images/marker-shadow.png')
 });
 
+// Global Configuration
+import config from './config';
+Vue.prototype.$config = config;
+
 Vue.config.productionTip = false;
 
+
 Vue.mixin(global_mixin);
+
+Vue.use(VueAnalytics, {
+    id: config.tracking_id,
+    router,
+    debug: {
+        sendHitTask: config.environment === 'production'
+    }
+});
 
 new Vue({
   router,

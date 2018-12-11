@@ -2,12 +2,13 @@
     <div class="container-fluid h-100">
         <div class="row h-100">
             <div class="col h-100 p-0">
-                <l-map class="h-100" ref="map" :zoom="mapZoom" :center="[43.085188, -77.671559]">
-                    <l-tile-layer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
+                <l-map class="h-100" ref="map" :zoom="mapZoom" :center="mapCenter">
+                    <l-tile-layer url="https://{s}.tile.osm.org/{z}/{x}/{y}.png"
                                   :attribution="osm_attribution"></l-tile-layer>
-                    <l-marker v-for="stop in filteredStops" :v-key="stop.id" :lat-lng="[stop.loc.x, stop.loc.y]"
+                    <l-marker v-for="stop in filteredStops" :key="stop.id" :lat-lng="[stop.loc.x, stop.loc.y]"
                               @click="showDetails(stop)">
-                        <l-icon :icon-size="[getIcon(stop.icon).width, getIcon(stop.icon).height]" :icon-url="getIcon(stop.icon).url"></l-icon>
+                        <l-icon :icon-size="[getIcon(stop.icon).width, getIcon(stop.icon).height]"
+                                :icon-url="getIcon(stop.icon).url"></l-icon>
                     </l-marker>
                     <l-control>
                         <b-button variant="leaflet" @click="sidebar = !sidebar">
@@ -30,11 +31,12 @@
                         </a>-->
                     </span>
                 </div>
-                <div v-for="stop in filteredStops" :v-key="stop.id" class="media">
-                    <div class="mr-1 quest-icon" :style="{ 'background-image': 'url(' + getIcon(stop.icon).url + ')' }"></div>
+                <div v-for="stop in filteredStops" :v-key="stop.id" @click="showDetails(stop)" class="media">
+                    <div class="quest-icon"
+                         :style="{ 'background-image': 'url(' + getIcon(stop.icon).url + ')' }"></div>
                     <div class="media-body">
                         <strong>{{ stop.name }}</strong>
-                        <p>{{ stop.quest }}</p>
+                        <p class="mb-0">{{ stop.quest }}</p>
                     </div>
                 </div>
             </div>
@@ -45,35 +47,27 @@
             <div v-if="focus !== null">
                 <p class="my-4">Quest: {{ focus.quest }}</p>
                 <p class="my-4">Reward: {{ focus.reward }}</p>
-                <p class="my-4">Confirmed: {{ focus.confirmed }}</p>
             </div>
         </b-modal>
 
-        <!--suppress HtmlUnknownTag -->
         <b-modal ref="modalFilter" id="modalFilter" title="Filter">
             <div class="row mb-3">
                 <div class="col-12">
                     <div class="mr-3 d-inline-block">
-                        <!--suppress HtmlUnknownTag -->
                         <b-button-group>
-                            <!--suppress HtmlUnknownTag -->
                             <b-button @click="visibilityAll(true)">
                                 Show All
                             </b-button>
-                            <!--suppress HtmlUnknownTag -->
                             <b-button @click="visibilityAll(false)">
                                 Hide All
                             </b-button>
                         </b-button-group>
                     </div>
 
-                    <!--suppress HtmlUnknownTag -->
                     <b-button-group>
-                        <!--suppress HtmlUnknownTag -->
                         <b-button @click="priorityAll(true)">
                             Prioritize All
                         </b-button>
-                        <!--suppress HtmlUnknownTag -->
                         <b-button @click="priorityAll(false)">
                             Deprioritize All
                         </b-button>
@@ -83,7 +77,8 @@
             <div class="row" v-for="quest in quests">
                 <div class="col">
                     <div class="media">
-                        <div class="quest-icon mr-3" :style="{ 'background-image': 'url(' + getIcon(quest.icon).url + ')' }"></div>
+                        <div class="quest-icon"
+                             :style="{ 'background-image': 'url(' + getIcon(quest.icon).url + ')' }"></div>
                         <div class="media-body">
                             <strong>{{ quest.quest }}</strong>
                             <p>{{ quest.reward }}</p>
@@ -91,21 +86,16 @@
                     </div>
                 </div>
                 <div class="col-12 button-col">
-                    <!--suppress HtmlUnknownTag -->
                     <b-button-group>
-                        <!--suppress HtmlUnknownTag -->
                         <b-button @click="setVisibility(quest, false)" variant="info" v-if="questIsVisible(quest.id)">
                             <i class="fas fa-eye fa-fw"></i>
                         </b-button>
-                        <!--suppress HtmlUnknownTag -->
                         <b-button @click="setVisibility(quest, true)" v-else>
                             <i class="fas fa-eye fa-fw"></i>
                         </b-button>
-                        <!--suppress HtmlUnknownTag -->
                         <b-button @click="setPriority(quest, false)" variant="danger" v-if="questIsPriority(quest.id)">
                             <i class="fas fa-exclamation fa-fw"></i>
                         </b-button>
-                        <!--suppress HtmlUnknownTag -->
                         <b-button @click="setPriority(quest, true)" v-else>
                             <i class="fas fa-exclamation fa-fw"></i>
                         </b-button>
@@ -115,7 +105,6 @@
 
         </b-modal>
 
-        <!--suppress HtmlUnknownTag -->
         <b-modal ref="modalSettings" title="Settings">
 
         </b-modal>
@@ -131,6 +120,7 @@
     export default {
         name: 'home',
         data: function () {
+            const clientWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
             return {
                 loading: true,
                 stops: [],
@@ -139,11 +129,14 @@
                 hiddenQuests: [],
                 focus: null,
                 mapZoom: 15,
+                mapCenter: [43.085188, -77.671559],
                 osm_attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-                sidebar: true
+                sidebar: (clientWidth >= 768)
             };
         },
         mounted: function () {
+
+
             this.hiddenQuests = (localStorage.hiddenQuests) ? JSON.parse(localStorage.hiddenQuests) : [];
             this.priorityQuests = (localStorage.priorityQuests) ? JSON.parse(localStorage.priorityQuests) : [];
 
@@ -266,6 +259,16 @@
             flex: 0;
             padding: 0;
         }
+        .media {
+            line-height: 1;
+            margin-bottom: .6rem;
+            cursor: pointer;
+            p {
+                margin-top: .2rem;
+                line-height: 1.2;
+            }
+        }
+
     }
 
     .quest-icon {
@@ -273,6 +276,7 @@
         height: 32px;
         background-size: cover;
         background-position: center;
+        margin-right: .6rem;
     }
 
     .btn-leaflet {
