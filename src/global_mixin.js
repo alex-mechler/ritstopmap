@@ -1,6 +1,7 @@
 import axios from 'axios';
+import config from './config'
 
-axios.defaults.baseURL = "http://localhost:3000/api/";
+axios.defaults.baseURL = config.api_root;
 
 export default {
     methods: {

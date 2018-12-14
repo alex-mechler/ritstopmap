@@ -15,12 +15,12 @@
                     <img :src="discordAvatar" class="rounded-circle mr-1">
                     {{ user.username }}
                 </b-nav-text>
-                <b-nav-item href="/api/auth/logout"><i class="fas fa-sign-out-alt"></i> Logout
+                <b-nav-item :href="authUrl('/api/auth/logout')"><i class="fas fa-sign-out-alt"></i> Logout
                 </b-nav-item>
             </b-navbar-nav>
 
             <b-navbar-nav class="ml-auto" v-else>
-                <b-nav-item href="/api/auth/login"><i class="fab fa-discord"></i> Login with Discord
+                <b-nav-item :href="authUrl('/api/auth/login')"><i class="fab fa-discord"></i> Login with Discord
                 </b-nav-item>
             </b-navbar-nav>
 
@@ -48,6 +48,11 @@
             bNavbarNav,
             bNavItem,
             bNavText
+        },
+        methods: {
+            authUrl(path) {
+                return this.$config.login_base + path;
+            }
         },
         computed: {
             discordAvatar() {
