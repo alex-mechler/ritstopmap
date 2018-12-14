@@ -2,17 +2,16 @@
     <l-map class="h-100" ref="map" :zoom="mapZoom" :center="mapCenter">
         <l-tile-layer url="https://{s}.tile.osm.org/{z}/{x}/{y}.png"
                       :attribution="osm_attribution"></l-tile-layer>
-        <!--<l-marker v-for="stop in filteredStops" :key="stop.id" :lat-lng="[stop.loc.x, stop.loc.y]"
-                  @click="showDetails(stop)">
+        <l-marker v-for="stop in filteredStops" :key="stop.id" :lat-lng="[stop.loc.x, stop.loc.y]">
             <l-icon :icon-size="[getIcon(stop.icon).width, getIcon(stop.icon).height]"
                     :icon-url="getIcon(stop.icon).url"></l-icon>
         </l-marker>
         <l-control>
-            <b-button variant="leaflet" @click="sidebar = !sidebar">
-                <i class="fas fa-angle-right" v-if="sidebar"></i>
+            <b-button variant="leaflet">
+                <i class="fas fa-angle-right" v-if="false"></i>
                 <i class="fas fa-angle-left" v-else></i>
             </b-button>
-        </l-control>-->
+        </l-control>
     </l-map>
 </template>
 
@@ -21,6 +20,7 @@
 
     export default {
         name: "Map",
+        props: ['stops', 'getIcon'],
         data: function () {
             return {
                 mapZoom: 15,
@@ -34,6 +34,11 @@
             LMarker,
             LIcon,
             LControl
+        },
+        computed: {
+            filteredStops() {
+                return this.stops;
+            }
         }
     }
 </script>
