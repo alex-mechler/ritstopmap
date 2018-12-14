@@ -7,8 +7,21 @@
 
         <b-collapse is-nav id="nav_collapse">
 
-            <b-navbar-nav class="ml-auto">
-                <b-nav-item href="#"><i class="fab fa-discord"></i> Login with Discord</b-nav-item>
+            <b-navbar-nav class="ml-auto" v-if="loading">
+            </b-navbar-nav>
+
+            <b-navbar-nav class="ml-auto" v-else-if="user">
+                <b-nav-text class="avatar-text mr-5">
+                    <img :src="discordAvatar" class="rounded-circle mr-1">
+                    {{ user.username }}
+                </b-nav-text>
+                <b-nav-item href="/api/auth/logout"><i class="fas fa-sign-out-alt"></i> Logout
+                </b-nav-item>
+            </b-navbar-nav>
+
+            <b-navbar-nav class="ml-auto" v-else>
+                <b-nav-item href="/api/auth/login"><i class="fab fa-discord"></i> Login with Discord
+                </b-nav-item>
             </b-navbar-nav>
 
         </b-collapse>
@@ -22,20 +35,35 @@
     import bCollapse from 'bootstrap-vue/es/components/collapse/collapse'
     import bNavbarNav from 'bootstrap-vue/es/components/navbar/navbar-nav'
     import bNavItem from 'bootstrap-vue/es/components/nav/nav-item'
+    import bNavText from 'bootstrap-vue/es/components/nav/nav-text'
 
     export default {
         name: "Header",
+        props: ['loading', 'user'],
         components: {
             bNavbar,
             bNavbarToggle,
             bNavbarBrand,
             bCollapse,
             bNavbarNav,
-            bNavItem
+            bNavItem,
+            bNavText
+        },
+        computed: {
+            discordAvatar() {
+                return `https://cdn.discordapp.com/avatars/${this.user.id}/${this.user.avatar}.png?size=32`
+            }
         }
     }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+    .avatar-text {
+        padding-top: calc(1.22rem - 16px);
+        padding-bottom: calc(1.22rem - 16px);
+        img {
+            height: 32px;
+            width: 32px;
+        }
+    }
 </style>

@@ -2,7 +2,7 @@
     <b-container fluid class="container-main">
         <b-row class="row-header">
             <b-col cols="12" class="header">
-                <topbar></topbar>
+                <topbar :loading="loading" :user="user"></topbar>
             </b-col>
         </b-row>
         <b-row class="row-body">
@@ -27,6 +27,30 @@
             Topbar,
             StopMap,
             Sidebar
+        },
+        data() {
+            return {
+                loading: true,
+                user: false
+            }
+        },
+        mounted() {
+            Promise.all([
+                this.loadUserData()
+            ]).then(() => {
+                this.loading = false;
+            });
+        },
+        methods: {
+            loadUserData() {
+                return new Promise(resolve => {
+                    this.request('auth/user')
+                        .then(response => {
+                            this.user = response.data ? response.data : false;
+                            resolve();
+                        })
+                })
+            }
         }
     }
 </script>
@@ -53,6 +77,7 @@
         min-width: 250px;
         transition: width .3s;
         transition-timing-function: ease;
+        background-color: #f1f1f1;
     }
 
 </style>
