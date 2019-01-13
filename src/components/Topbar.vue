@@ -12,7 +12,7 @@
 
             <b-navbar-nav class="ml-auto" v-else-if="user">
                 <b-nav-text class="avatar-text mr-5">
-                    <img :src="discordAvatar" class="rounded-circle mr-1">
+                    <img :src="discordAvatar" class="rounded-circle mr-1" alt="User Avatar">
                     {{ user.username }}
                 </b-nav-text>
                 <b-nav-item :href="authUrl('/api/auth/logout')"><i class="fas fa-sign-out-alt"></i> Logout
@@ -56,7 +56,7 @@
         },
         computed: {
             discordAvatar() {
-                return `https://cdn.discordapp.com/avatars/${this.user.id}/${this.user.avatar}.png?size=32`
+                return `https://cdn.discordapp.com/avatars/${this.user.discord_id}/${this.user.avatar}.png?size=32`
             }
         }
     }

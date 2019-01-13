@@ -9,6 +9,11 @@
     "height": 32,
     "width": 32
   },
+  "icon_grass": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/ic_grass.png",
+    "height": 32,
+    "width": 32
+  },
   "icon_stardust": {
     "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/stardust_painted.png",
     "height": 32,
@@ -29,114 +34,2484 @@
     "height": 32,
     "width": 32
   },
-  "icon_spinda": {
-    "url": "https://cdn.jsdelivr.net/gh/alex-mechler/ritstopmap/icons/327.png",
+
+
+
+
+
+  "icon_bulbasaur": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/bulbasaur.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_ivysaur": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/ivysaur.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_venusaur": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/venusaur.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_charmander": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/charmander.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_charmeleon": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/charmeleon.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_charizard": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/charizard.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_squirtle": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/squirtle.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_wartortle": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/wartortle.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_blastoise": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/blastoise.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_caterpie": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/caterpie.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_metapod": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/metapod.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_butterfree": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/butterfree.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_weedle": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/weedle.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_kakuna": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/kakuna.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_beedrill": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/beedrill.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_pidgey": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/pidgey.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_pidgeotto": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/pidgeotto.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_pidgeot": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/pidgeot.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_rattata": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/rattata.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_raticate": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/raticate.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_spearow": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/spearow.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_fearow": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/fearow.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_ekans": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/ekans.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_arbok": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/arbok.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_pikachu": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/pikachu.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_raichu": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/raichu.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_sandshrew": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/sandshrew.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_sandslash": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/sandslash.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_nidoran_f": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/nidoran-f.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_nidorina": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/nidorina.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_nidoqueen": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/nidoqueen.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_nidoran_m": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/nidoran-m.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_nidorino": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/nidorino.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_nidoking": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/nidoking.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_clefairy": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/clefairy.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_clefable": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/clefable.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_vulpix": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/vulpix.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_ninetales": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/ninetales.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_jigglypuff": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/jigglypuff.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_wigglytuff": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/wigglytuff.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_zubat": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/zubat.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_golbat": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/golbat.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_oddish": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/oddish.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_gloom": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/gloom.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_vileplume": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/vileplume.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_paras": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/paras.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_parasect": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/parasect.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_venonat": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/venonat.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_venomoth": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/venomoth.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_diglett": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/diglett.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_dugtrio": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/dugtrio.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_meowth": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/meowth.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_persian": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/persian.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_psyduck": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/psyduck.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_golduck": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/golduck.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_mankey": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/mankey.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_primeape": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/primeape.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_growlithe": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/growlithe.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_arcanine": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/arcanine.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_poliwag": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/poliwag.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_poliwhirl": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/poliwhirl.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_poliwrath": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/poliwrath.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_abra": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/abra.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_kadabra": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/kadabra.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_alakazam": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/alakazam.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_machop": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/machop.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_machoke": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/machoke.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_machamp": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/machamp.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_bellsprout": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/bellsprout.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_weepinbell": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/weepinbell.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_victreebel": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/victreebel.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_tentacool": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/tentacool.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_tentacruel": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/tentacruel.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_geodude": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/geodude.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_graveler": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/graveler.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_golem": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/golem.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_ponyta": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/ponyta.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_rapidash": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/rapidash.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_slowpoke": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/slowpoke.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_slowbro": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/slowbro.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_magnemite": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/magnemite.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_magneton": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/magneton.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_farfetchd": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/farfetchd.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_doduo": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/doduo.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_dodrio": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/dodrio.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_seel": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/seel.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_dewgong": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/dewgong.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_grimer": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/grimer.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_muk": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/muk.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_shellder": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/shellder.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_cloyster": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/cloyster.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_gastly": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/gastly.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_haunter": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/haunter.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_gengar": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/gengar.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_onix": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/onix.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_drowzee": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/drowzee.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_hypno": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/hypno.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_krabby": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/krabby.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_kingler": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/kingler.png",
     "height": 30,
     "width": 40
   },
   "icon_voltorb": {
-    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_100_00.png",
-    "height": 32,
-    "width": 32
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/voltorb.png",
+    "height": 30,
+    "width": 40
   },
-  "icon_gastly": {
-    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_092_00.png",
-    "height": 32,
-    "width": 32
+  "icon_electrode": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/electrode.png",
+    "height": 30,
+    "width": 40
   },
-  "icon_onix": {
-    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_095_00.png",
-    "height": 32,
-    "width": 32
+  "icon_exeggcute": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/exeggcute.png",
+    "height": 30,
+    "width": 40
   },
-  "icon_golduck": {
-    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_055_00.png",
-    "height": 32,
-    "width": 32
+  "icon_exeggutor": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/exeggutor.png",
+    "height": 30,
+    "width": 40
   },
-  "icon_larvitar": {
-    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_246_00.png",
-    "height": 32,
-    "width": 32
+  "icon_cubone": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/cubone.png",
+    "height": 30,
+    "width": 40
   },
-  "icon_kanto_starter": {
-    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/ic_grass.png",
-    "height": 32,
-    "width": 32
+  "icon_marowak": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/marowak.png",
+    "height": 30,
+    "width": 40
   },
-  "icon_jynx": {
-    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_124_00.png",
-    "height": 32,
-    "width": 32
+  "icon_hitmonlee": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/hitmonlee.png",
+    "height": 30,
+    "width": 40
   },
-  "icon_porygon": {
-    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_137_00.png",
-    "height": 32,
-    "width": 32
+  "icon_hitmonchan": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/hitmonchan.png",
+    "height": 30,
+    "width": 40
   },
-  "icon_mankey": {
-    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_056_00.png",
-    "height": 32,
-    "width": 32
+  "icon_lickitung": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/lickitung.png",
+    "height": 30,
+    "width": 40
   },
-  "icon_machop": {
-    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_066_00.png",
-    "height": 32,
-    "width": 32
+  "icon_koffing": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/koffing.png",
+    "height": 30,
+    "width": 40
   },
-  "icon_electrabuzz": {
-    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_125_00.png",
-    "height": 32,
-    "width": 32
+  "icon_weezing": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/weezing.png",
+    "height": 30,
+    "width": 40
   },
-  "icon_eevee": {
-    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_133_00.png",
-    "height": 32,
-    "width": 32
+  "icon_rhyhorn": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/rhyhorn.png",
+    "height": 30,
+    "width": 40
   },
-  "icon_feebas": {
-    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_349_00.png",
-    "height": 32,
-    "width": 32
-  },
-  "icon_misdreavus": {
-    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_200_00.png",
-    "height": 32,
-    "width": 32
-  },
-  "icon_dratini": {
-    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_147_00.png",
-    "height": 32,
-    "width": 32
-  },
-  "icon_numel": {
-    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_322_00.png",
-    "height": 32,
-    "width": 32
-  },
-  "icon_vulpix_poliwag": {
-    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/ic_grass.png",
-    "height": 32,
-    "width": 32
-  },
-  "icon_magikarp": {
-    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_129_00.png",
-    "height": 32,
-    "width": 32
-  },
-  "icon_exeggcute_lanturn": {
-    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/ic_grass.png",
-    "height": 32,
-    "width": 32
-  },
-  "icon_magmar": {
-    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_126_00.png",
-    "height": 32,
-    "width": 32
+  "icon_rhydon": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/rhydon.png",
+    "height": 30,
+    "width": 40
   },
   "icon_chansey": {
-    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/pixels/pokemon_icon_113_00.png",
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/chansey.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_tangela": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/tangela.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_kangaskhan": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/kangaskhan.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_horsea": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/horsea.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_seadra": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/seadra.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_goldeen": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/goldeen.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_seaking": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/seaking.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_staryu": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/staryu.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_starmie": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/starmie.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_mr-mime": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/mr-mime.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_scyther": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/scyther.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_jynx": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/jynx.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_electabuzz": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/electabuzz.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_magmar": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/magmar.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_pinsir": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/pinsir.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_tauros": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/tauros.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_magikarp": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/magikarp.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_gyarados": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/gyarados.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_lapras": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/lapras.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_ditto": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/ditto.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_eevee": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/eevee.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_vaporeon": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/vaporeon.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_jolteon": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/jolteon.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_flareon": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/flareon.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_porygon": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/porygon.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_omanyte": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/omanyte.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_omastar": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/omastar.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_kabuto": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/kabuto.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_kabutops": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/kabutops.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_aerodactyl": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/aerodactyl.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_snorlax": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/snorlax.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_articuno": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/articuno.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_zapdos": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/zapdos.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_moltres": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/moltres.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_dratini": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/dratini.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_dragonair": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/dragonair.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_dragonite": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/dragonite.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_mewtwo": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/mewtwo.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_mew": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/mew.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_chikorita": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/chikorita.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_bayleef": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/bayleef.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_meganium": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/meganium.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_cyndaquil": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/cyndaquil.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_quilava": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/quilava.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_typhlosion": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/typhlosion.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_totodile": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/totodile.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_croconaw": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/croconaw.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_feraligatr": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/feraligatr.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_sentret": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/sentret.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_furret": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/furret.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_hoothoot": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/hoothoot.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_noctowl": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/noctowl.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_ledyba": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/ledyba.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_ledian": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/ledian.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_spinarak": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/spinarak.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_ariados": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/ariados.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_crobat": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/crobat.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_chinchou": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/chinchou.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_lanturn": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/lanturn.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_pichu": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/pichu.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_cleffa": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/cleffa.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_igglybuff": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/igglybuff.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_togepi": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/togepi.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_togetic": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/togetic.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_natu": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/natu.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_xatu": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/xatu.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_mareep": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/mareep.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_flaaffy": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/flaaffy.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_ampharos": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/ampharos.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_bellossom": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/bellossom.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_marill": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/marill.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_azumarill": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/azumarill.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_sudowoodo": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/sudowoodo.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_politoed": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/politoed.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_hoppip": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/hoppip.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_skiploom": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/skiploom.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_jumpluff": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/jumpluff.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_aipom": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/aipom.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_sunkern": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/sunkern.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_sunflora": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/sunflora.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_yanma": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/yanma.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_wooper": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/wooper.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_quagsire": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/quagsire.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_espeon": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/espeon.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_umbreon": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/umbreon.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_murkrow": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/murkrow.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_slowking": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/slowking.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_misdreavus": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/misdreavus.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_unown": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/unown.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_wobbuffet": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/wobbuffet.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_girafarig": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/girafarig.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_pineco": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/pineco.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_forretress": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/forretress.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_dunsparce": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/dunsparce.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_gligar": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/gligar.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_steelix": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/steelix.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_snubbull": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/snubbull.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_granbull": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/granbull.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_qwilfish": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/qwilfish.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_scizor": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/scizor.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_shuckle": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/shuckle.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_heracross": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/heracross.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_sneasel": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/sneasel.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_teddiursa": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/teddiursa.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_ursaring": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/ursaring.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_slugma": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/slugma.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_magcargo": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/magcargo.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_swinub": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/swinub.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_piloswine": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/piloswine.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_corsola": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/corsola.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_remoraid": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/remoraid.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_octillery": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/octillery.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_delibird": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/delibird.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_mantine": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/mantine.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_skarmory": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/skarmory.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_houndour": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/houndour.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_houndoom": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/houndoom.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_kingdra": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/kingdra.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_phanpy": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/phanpy.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_donphan": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/donphan.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_porygon2": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/porygon2.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_stantler": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/stantler.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_smeargle": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/smeargle.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_tyrogue": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/tyrogue.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_hitmontop": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/hitmontop.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_smoochum": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/smoochum.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_elekid": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/elekid.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_magby": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/magby.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_miltank": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/miltank.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_blissey": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/blissey.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_raikou": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/raikou.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_entei": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/entei.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_suicune": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/suicune.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_larvitar": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/larvitar.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_pupitar": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/pupitar.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_tyranitar": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/tyranitar.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_lugia": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/lugia.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_ho-oh": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/ho-oh.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_celebi": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/celebi.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_treecko": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/treecko.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_grovyle": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/grovyle.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_sceptile": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/sceptile.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_torchic": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/torchic.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_combusken": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/combusken.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_blaziken": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/blaziken.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_mudkip": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/mudkip.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_marshtomp": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/marshtomp.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_swampert": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/swampert.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_poochyena": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/poochyena.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_mightyena": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/mightyena.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_zigzagoon": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/zigzagoon.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_linoone": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/linoone.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_wurmple": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/wurmple.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_silcoon": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/silcoon.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_beautifly": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/beautifly.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_cascoon": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/cascoon.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_dustox": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/dustox.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_lotad": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/lotad.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_lombre": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/lombre.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_ludicolo": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/ludicolo.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_seedot": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/seedot.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_nuzleaf": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/nuzleaf.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_shiftry": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/shiftry.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_taillow": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/taillow.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_swellow": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/swellow.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_wingull": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/wingull.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_pelipper": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/pelipper.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_ralts": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/ralts.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_kirlia": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/kirlia.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_gardevoir": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/gardevoir.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_surskit": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/surskit.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_masquerain": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/masquerain.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_shroomish": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/shroomish.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_breloom": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/breloom.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_slakoth": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/slakoth.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_vigoroth": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/vigoroth.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_slaking": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/slaking.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_nincada": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/nincada.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_ninjask": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/ninjask.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_shedinja": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/shedinja.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_whismur": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/whismur.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_loudred": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/loudred.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_exploud": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/exploud.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_makuhita": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/makuhita.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_hariyama": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/hariyama.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_azurill": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/azurill.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_nosepass": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/nosepass.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_skitty": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/skitty.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_delcatty": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/delcatty.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_sableye": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/sableye.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_mawile": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/mawile.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_aron": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/aron.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_lairon": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/lairon.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_aggron": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/aggron.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_meditite": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/meditite.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_medicham": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/medicham.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_electrike": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/electrike.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_manectric": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/manectric.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_plusle": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/plusle.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_minun": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/minun.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_volbeat": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/volbeat.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_illumise": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/illumise.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_roselia": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/roselia.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_gulpin": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/gulpin.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_swalot": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/swalot.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_carvanha": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/carvanha.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_sharpedo": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/sharpedo.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_wailmer": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/wailmer.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_wailord": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/wailord.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_numel": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/numel.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_camerupt": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/camerupt.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_torkoal": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/torkoal.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_spoink": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/spoink.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_grumpig": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/grumpig.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_spinda": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/spinda.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_trapinch": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/trapinch.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_vibrava": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/vibrava.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_flygon": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/flygon.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_cacnea": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/cacnea.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_cacturne": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/cacturne.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_swablu": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/swablu.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_altaria": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/altaria.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_zangoose": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/zangoose.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_seviper": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/seviper.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_lunatone": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/lunatone.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_solrock": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/solrock.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_barboach": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/barboach.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_whiscash": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/whiscash.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_corphish": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/corphish.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_crawdaunt": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/crawdaunt.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_baltoy": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/baltoy.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_claydol": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/claydol.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_lileep": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/lileep.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_cradily": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/cradily.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_anorith": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/anorith.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_armaldo": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/armaldo.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_feebas": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/feebas.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_milotic": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/milotic.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_castform": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/castform.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_kecleon": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/kecleon.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_shuppet": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/shuppet.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_banette": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/banette.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_duskull": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/duskull.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_dusclops": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/dusclops.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_tropius": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/tropius.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_chimecho": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/chimecho.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_absol": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/absol.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_wynaut": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/wynaut.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_snorunt": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/snorunt.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_glalie": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/glalie.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_spheal": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/spheal.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_sealeo": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/sealeo.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_walrein": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/walrein.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_clamperl": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/clamperl.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_huntail": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/huntail.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_gorebyss": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/gorebyss.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_relicanth": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/relicanth.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_luvdisc": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/luvdisc.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_bagon": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/bagon.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_shelgon": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/shelgon.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_salamence": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/salamence.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_beldum": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/beldum.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_metang": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/metang.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_metagross": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/metagross.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_regirock": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/regirock.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_regice": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/regice.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_registeel": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/registeel.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_latias": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/latias.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_latios": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/latios.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_kyogre": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/kyogre.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_groudon": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/groudon.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_rayquaza": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/rayquaza.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_jirachi": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/jirachi.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_deoxys": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/deoxys.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_turtwig": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/turtwig.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_grotle": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/grotle.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_torterra": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/torterra.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_chimchar": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/chimchar.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_monferno": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/monferno.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_infernape": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/infernape.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_piplup": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/piplup.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_prinplup": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/prinplup.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_empoleon": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/empoleon.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_starly": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/starly.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_staravia": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/staravia.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_staraptor": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/staraptor.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_bidoof": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/bidoof.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_bibarel": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/bibarel.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_kricketot": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/kricketot.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_kricketune": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/kricketune.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_shinx": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/shinx.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_luxio": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/luxio.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_luxray": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/luxray.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_budew": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/budew.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_roserade": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/roserade.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_cranidos": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/cranidos.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_rampardos": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/rampardos.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_shieldon": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/shieldon.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_bastiodon": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/bastiodon.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_burmy": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/burmy.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_wormadam": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/wormadam.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_mothim": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/mothim.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_combee": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/combee.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_vespiquen": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/vespiquen.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_pachirisu": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/pachirisu.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_buizel": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/buizel.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_floatzel": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/floatzel.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_cherubi": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/cherubi.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_cherrim": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/cherrim.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_shellos": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/shellos.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_gastrodon": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/gastrodon.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_ambipom": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/ambipom.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_drifloon": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/drifloon.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_drifblim": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/drifblim.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_buneary": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/buneary.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_lopunny": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/lopunny.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_mismagius": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/mismagius.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_honchkrow": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/honchkrow.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_glameow": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/glameow.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_purugly": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/purugly.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_chingling": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/chingling.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_stunky": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/stunky.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_skuntank": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/skuntank.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_bronzor": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/bronzor.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_bronzong": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/bronzong.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_bonsly": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/bonsly.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_mime-jr": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/mime-jr.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_happiny": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/happiny.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_chatot": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/chatot.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_spiritomb": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/spiritomb.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_gible": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/gible.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_gabite": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/gabite.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_garchomp": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/garchomp.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_munchlax": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/munchlax.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_riolu": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/riolu.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_lucario": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/lucario.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_hippopotas": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/hippopotas.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_hippowdon": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/hippowdon.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_skorupi": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/skorupi.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_drapion": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/drapion.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_croagunk": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/croagunk.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_toxicroak": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/toxicroak.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_carnivine": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/carnivine.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_finneon": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/finneon.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_lumineon": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/lumineon.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_mantyke": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/mantyke.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_snover": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/snover.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_abomasnow": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/abomasnow.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_weavile": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/weavile.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_magnezone": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/magnezone.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_lickilicky": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/lickilicky.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_rhyperior": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/rhyperior.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_tangrowth": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/tangrowth.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_electivire": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/electivire.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_magmortar": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/magmortar.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_togekiss": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/togekiss.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_yanmega": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/yanmega.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_leafeon": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/leafeon.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_glaceon": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/glaceon.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_gliscor": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/gliscor.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_mamoswine": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/mamoswine.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_porygon-z": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/porygon-z.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_gallade": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/gallade.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_probopass": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/probopass.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_dusknoir": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/dusknoir.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_froslass": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/froslass.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_rotom": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/rotom.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_uxie": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/uxie.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_mesprit": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/mesprit.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_azelf": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/azelf.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_dialga": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/dialga.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_palkia": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/palkia.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_heatran": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/heatran.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_regigigas": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/regigigas.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_giratina": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/giratina.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_cresselia": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/cresselia.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_phione": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/phione.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_manaphy": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/manaphy.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_darkrai": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/darkrai.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_shaymin": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/shaymin.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_arceus": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/arceus.png",
+    "height": 30,
+    "width": 40
+  },
+  "icon_meltan": {
+    "url": "https://cdn.jsdelivr.net/gh/alex-mechler/ritstopmap/icons/pokemon_icon_808_00.png",
+    "height": 40,
+    "width": 36
+  },
+  "icon_melmetal": {
+    "url": "https://cdn.jsdelivr.net/gh/alex-mechler/ritstopmap/icons/pokemon_icon_809_00.png",
     "height": 32,
-    "width": 32
+    "width": 45
   }
 }

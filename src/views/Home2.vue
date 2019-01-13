@@ -52,9 +52,9 @@
         methods: {
             loadUserData() {
                 return new Promise(resolve => {
-                    this.request('auth/user')
+                    this.request('user')
                         .then(response => {
-                            this.user = response.data ? response.data : false;
+                            this.user = response.data.result ? response.data.result : false;
                             resolve();
                         })
                 })

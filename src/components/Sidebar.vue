@@ -11,7 +11,8 @@
         </div>
         <div v-for="stop in stops" :v-key="stop.id" class="media">
             <div class="quest-icon"
-                 :style="{ 'background-image': 'url(' + getIcon(stop.icon).url + ')' }"></div>
+                 :style="{ 'background-image': 'url(' + getIcon(stop.icon).url + ')' }"
+                 :title="stop.reward"></div>
             <div class="media-body">
                 <strong>{{ stop.name }}</strong>
                 <p class="mb-0">{{ stop.quest }}</p>
