@@ -2513,5 +2513,25 @@
     "url": "https://cdn.jsdelivr.net/gh/alex-mechler/ritstopmap/icons/pokemon_icon_809_00.png",
     "height": 32,
     "width": 45
+  },
+  "icon_sp_nice": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/Item_0001.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_sp_great": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/Item_0002.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_sp_egg": {
+    "url": "https://cdn.jsdelivr.net/gh/alex-mechler/ritstopmap/icons/Egg_D.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_sp_buddy": {
+    "url": "https://cdn.jsdelivr.net/gh/alex-mechler/ritstopmap/icons/btn_buddy.png",
+    "height": 32,
+    "width": 32
   }
 }
