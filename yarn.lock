@@ -2,6 +2,32 @@
 # yarn lockfile v1
 
 
+"@bugsnag/browser@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@bugsnag/browser/-/browser-5.1.0.tgz#e1bad87ae96d01fd5b4ae291d33f1a579db20d33"
+
+"@bugsnag/js@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@bugsnag/js/-/js-5.1.0.tgz#a60a378d7ec234cbe438caaa330d1e53c48db423"
+  dependencies:
+    "@bugsnag/browser" "^5.1.0"
+    "@bugsnag/node" "^5.1.0"
+
+"@bugsnag/node@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@bugsnag/node/-/node-5.1.0.tgz#8e98835c728c9e529c399f47519a20eac8391fc7"
+  dependencies:
+    byline "^5.0.0"
+    error-stack-parser "^2.0.2"
+    iserror "^0.0.2"
+    pump "^3.0.0"
+    request "^2.87.0"
+    stack-generator "^2.0.3"
+
+"@bugsnag/plugin-vue@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@bugsnag/plugin-vue/-/plugin-vue-5.1.0.tgz#8caab1c6398d03998817b2fb1566f3dab0181945"
+
 "@fortawesome/fontawesome-free@^5.6.0":
   version "5.6.0"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.6.0.tgz#7d7624cdb0ef2edd8a91baa193398e6ad16cb21c"
@@ -770,6 +796,10 @@ builtin-modules@^1.0.0:
 builtin-status-codes@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
+
+byline@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/byline/-/byline-5.0.0.tgz#741c5216468eadc457b03410118ad77de8c1ddb1"
 
 bytes@3.0.0:
   version "3.0.0"
@@ -1793,7 +1823,7 @@ error-ex@^1.2.0, error-ex@^1.3.1:
   dependencies:
     is-arrayish "^0.2.1"
 
-error-stack-parser@^2.0.0:
+error-stack-parser@^2.0.0, error-stack-parser@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/error-stack-parser/-/error-stack-parser-2.0.2.tgz#4ae8dbaa2bf90a8b450707b9149dcabca135520d"
   dependencies:
@@ -2962,6 +2992,10 @@ isemail@3.x.x:
   resolved "https://registry.yarnpkg.com/isemail/-/isemail-3.2.0.tgz#59310a021931a9fb06bbb51e155ce0b3f236832c"
   dependencies:
     punycode "2.x.x"
+
+iserror@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/iserror/-/iserror-0.0.2.tgz#bd53451fe2f668b9f2402c1966787aaa2c7c0bf5"
 
 isexe@^2.0.0:
   version "2.0.0"
@@ -5176,6 +5210,12 @@ ssri@^6.0.0, ssri@^6.0.1:
 stable@~0.1.6:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/stable/-/stable-0.1.8.tgz#836eb3c8382fe2936feaf544631017ce7d47a3cf"
+
+stack-generator@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/stack-generator/-/stack-generator-2.0.3.tgz#bb74385c67ffc4ccf3c4dee5831832d4e509c8a0"
+  dependencies:
+    stackframe "^1.0.4"
 
 stackframe@^1.0.4:
   version "1.0.4"

@@ -9,7 +9,7 @@
                         </a>
                     </span>
         </div>
-        <div v-for="stop in stops" :v-key="stop.id" class="media">
+        <div v-for="stop in stops" :v-key="stop.id" class="media" @click="$emit('focus-stop', stop._vue_key)">
             <div class="quest-icon"
                  :style="{ 'background-image': 'url(' + getIcon(stop.icon).url + ')' }"
                  :title="stop.reward"></div>

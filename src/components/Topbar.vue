@@ -10,7 +10,7 @@
             <b-navbar-nav class="ml-auto" v-if="loading">
             </b-navbar-nav>
 
-            <b-navbar-nav class="ml-auto" v-else-if="user">
+            <b-navbar-nav class="ml-auto" v-else-if="user.hasOwnProperty('username')">
                 <b-nav-text class="avatar-text mr-5">
                     <img :src="discordAvatar" class="rounded-circle mr-1" alt="User Avatar">
                     {{ user.username }}

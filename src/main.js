@@ -3,6 +3,9 @@ import App from './App.vue'
 import router from './router'
 import global_mixin from './global_mixin'
 import VueAnalytics from 'vue-analytics'
+import bugsnag from '@bugsnag/js'
+import bugsnagVue from '@bugsnag/plugin-vue'
+
 import './bootstrap'
 
 // App Styles
@@ -34,6 +37,10 @@ Vue.use(VueAnalytics, {
         sendHitTask: config.environment === 'production'
     }
 });
+
+// Bugsnag
+const bugsnagClient = bugsnag('4e6f1bfb86d0d586d78c7a2e95deef79');
+bugsnagClient.use(bugsnagVue, Vue);
 
 new Vue({
   router,

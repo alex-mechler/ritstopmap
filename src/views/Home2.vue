@@ -1,20 +1,24 @@
 <template>
-    <b-container fluid class="container-main">
-        <b-row class="row-header">
-            <b-col cols="12" class="header">
-                <topbar :loading="loading" :user="user"></topbar>
-            </b-col>
-            <b-col cols="12" class="loading-indicator bg-primary"></b-col>
-        </b-row>
-        <b-row class="row-body">
-            <b-col class="p-0">
-                <stop-map :stops="filteredStops" :getIcon="getIcon"></stop-map>
-            </b-col>
-            <b-col cols="2" class="sidebar">
-                <sidebar :stops="filteredStops" :getIcon="getIcon"></sidebar>
-            </b-col>
-        </b-row>
-    </b-container>
+    <div>
+        <b-container fluid class="container-main">
+            <b-row class="row-header">
+                <b-col cols="12" class="header">
+                    <topbar :loading="loading" :user="user"></topbar>
+                </b-col>
+                <b-col cols="12" class="loading-indicator bg-primary"></b-col>
+            </b-row>
+            <b-row class="row-body">
+                <b-col class="p-0">
+                    <stop-map :stops="filteredStops" :getIcon="getIcon" @focus-stop="onFocusStop"></stop-map>
+                </b-col>
+                <b-col cols="2" class="sidebar">
+                    <sidebar :stops="filteredStops" :getIcon="getIcon" @focus-stop="onFocusStop"></sidebar>
+                </b-col>
+            </b-row>
+        </b-container>
+
+        <stop-detail-modal ref="focusedStopModal" :stop="focusedStop" :quests="quests"></stop-detail-modal>
+    </div>
 </template>
 
 <script>
@@ -22,11 +26,13 @@
     import StopMap from '../components/StopMap';
     import Sidebar from '../components/Sidebar';
     import icons from '../data/icons.json';
-    import _ from 'underscore';
+    import _ from 'lodash';
+    import StopDetailModal from "../components/StopDetailModal";
 
     export default {
         name: "Home2",
         components: {
+            StopDetailModal,
             Topbar,
             StopMap,
             Sidebar
@@ -39,6 +45,8 @@
                 quests: [],
                 priorityQuests: [],
                 hiddenQuests: [],
+                focusedStopId: null,
+                questSubmitMode: false
             }
         },
         mounted() {
@@ -85,10 +93,28 @@
 
                 return icons['icon_unchecked'];
             },
+            onFocusStop(stop_vue_id) {
+                this.focusedStopId = stop_vue_id;
+                this.$refs.focusedStopModal.show()
+            }
         },
         computed: {
             filteredStops() {
-                return this.stops;
+                return _.map(this.stops, (stop, key) => {
+                    stop._vue_key = key;
+                    return stop;
+                });
+            },
+            focusedStop() {
+                if (this.focusedStopId === null) {
+                    return null;
+                }
+
+                if (this.focusedStopId < 0 || this.focusedStopId >= this.stops.length) {
+                    return null;
+                }
+
+                return this.stops[this.focusedStopId];
             }
         }
     }
@@ -110,6 +136,7 @@
             flex-grow: 1;
         }
     }
+
     .sidebar {
         max-height: 100%;
         overflow-y: auto;

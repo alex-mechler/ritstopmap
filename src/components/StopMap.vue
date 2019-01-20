@@ -2,7 +2,8 @@
     <l-map class="h-100" ref="map" :zoom="mapZoom" :center="mapCenter">
         <l-tile-layer url="https://{s}.tile.osm.org/{z}/{x}/{y}.png"
                       :attribution="osm_attribution"></l-tile-layer>
-        <l-marker v-for="stop in filteredStops" :key="stop.id" :lat-lng="[stop.loc.x, stop.loc.y]">
+        <l-marker v-for="stop in filteredStops" :key="stop.id" :lat-lng="[stop.loc.x, stop.loc.y]"
+                  @click="$emit('focus-stop', stop._vue_key)">
             <l-icon :icon-size="[getIcon(stop.icon).width, getIcon(stop.icon).height]"
                     :icon-url="getIcon(stop.icon).url"></l-icon>
         </l-marker>
