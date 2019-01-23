@@ -1,15 +1,17 @@
 <template>
     <b-modal ref="stopList">
-        Quests for {{ today() }}<br>
-        <template v-for="quest in quests">
-            <template v-if="quest.id > 2 && stopsWithQuest(quest).length > 0">
-                **{{ quest.reward }} ({{quest.quest}})**:<br>
-                <template v-for="stop in stopsWithQuest(quest)">
-                    - {{ stop.name }}<br>
+        <p class="stopListModalInner">
+            Quests for {{ today() }}<br>
+            <template v-for="quest in quests">
+                <template v-if="quest.id > 2 && stopsWithQuest(quest).length > 0">
+                    **{{ quest.reward }} ({{quest.quest}})**:<br>
+                    <template v-for="stop in stopsWithQuest(quest)">
+                        - {{ stop.name }}<br>
+                    </template>
                 </template>
             </template>
-        </template>
-        Here is your quests for the day @RITStop. Check out the visual map at https://pokes.top/
+            Here is your quests for the day @RITStop. Check out the visual map at https://pokes.top/
+        </p>
     </b-modal>
 </template>
 
@@ -39,5 +41,7 @@
 </script>
 
 <style scoped>
-
+    .stopListModalInner {
+        font-family: monospace;
+    }
 </style>
