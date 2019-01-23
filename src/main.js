@@ -5,6 +5,7 @@ import global_mixin from './global_mixin'
 import VueAnalytics from 'vue-analytics'
 import bugsnag from '@bugsnag/js'
 import bugsnagVue from '@bugsnag/plugin-vue'
+import Notifications from 'vue-notification'
 
 import './bootstrap'
 
@@ -37,6 +38,8 @@ Vue.use(VueAnalytics, {
         sendHitTask: config.environment === 'production'
     }
 });
+
+Vue.use(Notifications);
 
 // Bugsnag
 const bugsnagClient = bugsnag('4e6f1bfb86d0d586d78c7a2e95deef79');

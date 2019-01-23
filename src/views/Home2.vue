@@ -1,5 +1,6 @@
 <template>
     <div>
+        <notifications position="bottom left" group="main"></notifications>
         <b-container fluid class="container-main">
             <b-row class="row-header">
                 <b-col cols="12" class="header">
@@ -17,7 +18,7 @@
             </b-row>
         </b-container>
 
-        <stop-detail-modal ref="focusedStopModal" :stop="focusedStop" :quests="quests"></stop-detail-modal>
+        <stop-detail-modal ref="focusedStopModal" :stop="focusedStop" :quests="quests" :show-submit="user.hasOwnProperty('username')"></stop-detail-modal>
     </div>
 </template>
 
@@ -63,6 +64,9 @@
                     this.request('user')
                         .then(response => {
                             this.user = response.data.result ? response.data.result : false;
+                            resolve();
+                        }, () => {
+                            this.user = false;
                             resolve();
                         })
                 })

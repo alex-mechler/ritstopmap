@@ -6,13 +6,14 @@
                 <div class="text-center">Loading...</div>
             </div>
             <div v-else-if="submitMode">
+                <b-alert v-if="this.error" variant="danger" v-text="this.error" show></b-alert>
                 <b-form>
                     <b-form-group label="Quest:"
                                   label-for="inputQuest">
                         <b-form-select id="inputQuest"
                                        :options="questOptions"
                                        required
-                                       v-model="quest">
+                                       v-model="selectedQuest">
                         </b-form-select>
                     </b-form-group>
                 </b-form>
@@ -21,7 +22,7 @@
             <div v-else>
                 <p class="my-4">Quest: {{ stop.quest }}</p>
                 <p class="my-4">Reward: {{ stop.reward }}</p>
-                <p><a href="#" @click.prevent="submitMode = true">Incorrect?</a></p>
+                <p v-if="showSubmit"><a href="#" @click.prevent="submitMode = true">Incorrect?</a></p>
             </div>
         </div>
 
@@ -42,23 +43,25 @@
     import bForm from 'bootstrap-vue/es/components/form/form'
     import bFormGroup from 'bootstrap-vue/es/components/form-group/form-group'
     import bFormSelect from 'bootstrap-vue/es/components/form-select/form-select'
+    import bAlert from 'bootstrap-vue/es/components/alert/alert'
     import LoadingIndicator from "./LoadingIndicator";
-    import axios from "axios";
 
     export default {
         name: "StopDetailModal",
-        props: ['stop', 'quests'],
+        props: ['stop', 'quests', 'showSubmit'],
         components: {
             LoadingIndicator,
             bForm,
             bFormGroup,
-            bFormSelect
+            bFormSelect,
+            bAlert,
         },
         data() {
             return {
                 submitMode: false,
-                quest: null,
-                loading: false
+                selectedQuest: null,
+                loading: false,
+                error: null
             }
         },
         methods: {
@@ -70,16 +73,35 @@
             },
             submitForm() {
                 this.loading = true;
+                const quest = this.quests[this.selectedQuest];
 
                 this.request().post('research', {
-                    quest: this.quest,
+                    quest: quest.id,
                     stop: this.stop.id
                 }).then(response => {
-                    this.quest = null;
+                    this.setQuest(this.stop, quest);
+                    this.selectedQuest = null;
                     this.submitMode = false;
                     this.loading = false;
                     this.hide();
+                    this.$notify({
+                        group: 'main',
+                        title: 'Success',
+                        text: 'Stop submitted successfully',
+                        type: 'success',
+                        duration: 3000
+                    });
+                }, err => {
+                    this.loading = false;
+                    console.log(err);
+                    this.error = err;
                 })
+            },
+            setQuest(stop, quest) {
+                stop.icon = quest.icon;
+                stop.quest_id = quest.id;
+                stop.quest = quest.quest;
+                stop.reward = quest.reward;
             }
         },
         computed: {
@@ -89,12 +111,14 @@
                 }
             },
             questOptions() {
-                return _.map(this.quests, quest => {
+                return _(this.quests).map((quest, key) => {
                     return {
-                        value: quest.id,
+                        value: key,
                         text: `${quest.quest} (${quest.reward})`
                     }
-                })
+                }).sortBy(q => {
+                    return q.text;
+                }).value();
             }
         }
     }
