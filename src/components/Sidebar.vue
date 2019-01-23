@@ -4,6 +4,9 @@
             {{ stops.length }} Locations
             <span class="float-right">
                         <!--<i class="fas fa-search mr-2"></i>-->
+                        <a href="#" class="mr-2" @click.prevent="$emit('generate-list')">
+                            <i class="fab fa-discord"></i>
+                        </a>
                         <a href="#" class="mr-2" @click.prevent="">
                             <i class="fas fa-filter"></i>
                         </a>

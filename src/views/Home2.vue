@@ -13,12 +13,13 @@
                     <stop-map :stops="filteredStops" :getIcon="getIcon" @focus-stop="onFocusStop"></stop-map>
                 </b-col>
                 <b-col cols="2" class="sidebar">
-                    <sidebar :stops="filteredStops" :getIcon="getIcon" @focus-stop="onFocusStop"></sidebar>
+                    <sidebar :stops="filteredStops" :getIcon="getIcon" @focus-stop="onFocusStop" @generate-list="onGenerateList"></sidebar>
                 </b-col>
             </b-row>
         </b-container>
 
         <stop-detail-modal ref="focusedStopModal" :stop="focusedStop" :quests="quests" :show-submit="user.hasOwnProperty('username')"></stop-detail-modal>
+        <list-generator-modal ref="listGeneratorModal" :stops="stops" :quests="quests"></list-generator-modal>
     </div>
 </template>
 
@@ -29,11 +30,13 @@
     import icons from '../data/icons.json';
     import _ from 'lodash';
     import StopDetailModal from "../components/StopDetailModal";
+    import ListGeneratorModal from "../components/ListGeneratorModal"
 
     export default {
         name: "Home2",
         components: {
             StopDetailModal,
+            ListGeneratorModal,
             Topbar,
             StopMap,
             Sidebar
@@ -100,6 +103,9 @@
             onFocusStop(stop_vue_id) {
                 this.focusedStopId = stop_vue_id;
                 this.$refs.focusedStopModal.show()
+            },
+            onGenerateList() {
+                this.$refs.listGeneratorModal.show()
             }
         },
         computed: {

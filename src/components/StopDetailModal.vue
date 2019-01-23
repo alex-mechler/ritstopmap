@@ -69,6 +69,10 @@
                 this.$refs.stopDetail.show();
             },
             hide() {
+                this.submitMode = false;
+                this.selectedQuest = null;
+                this.loading = false;
+                this.error = null;
                 this.$refs.stopDetail.hide();
             },
             submitForm() {
@@ -80,9 +84,6 @@
                     stop: this.stop.id
                 }).then(response => {
                     this.setQuest(this.stop, quest);
-                    this.selectedQuest = null;
-                    this.submitMode = false;
-                    this.loading = false;
                     this.hide();
                     this.$notify({
                         group: 'main',
