@@ -8,8 +8,8 @@
                     :icon-url="getIcon(stop.icon).url"></l-icon>
         </l-marker>
         <l-control>
-            <b-button variant="leaflet">
-                <i class="fas fa-angle-right" v-if="false"></i>
+            <b-button variant="leaflet" @click="$emit('toggle-sidebar')">
+                <i class="fas fa-angle-right" v-if="sidebar"></i>
                 <i class="fas fa-angle-left" v-else></i>
             </b-button>
         </l-control>
@@ -22,7 +22,7 @@
 
     export default {
         name: "Map",
-        props: ['stops', 'getIcon'],
+        props: ['stops', 'getIcon', 'sidebar'],
         data: function () {
             return {
                 mapZoom: 15,
@@ -40,6 +40,11 @@
         computed: {
             filteredStops() {
                 return this.stops;
+            }
+        },
+        methods: {
+            invalidateSize() {
+                this.$refs.map.mapObject.invalidateSize()
             }
         }
     }

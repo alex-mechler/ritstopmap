@@ -22,9 +22,10 @@
                 </b-row>
                 <b-row class="row-body">
                     <b-col class="p-0">
-                        <stop-map :stops="filteredStops" :getIcon="getIcon" @focus-stop="onFocusStop"></stop-map>
+                        <stop-map ref="map" :stops="filteredStops" :getIcon="getIcon" :sidebar="sidebar" @focus-stop="onFocusStop"
+                                  @toggle-sidebar="onToggleSidebar"></stop-map>
                     </b-col>
-                    <b-col cols="2" class="sidebar">
+                    <b-col cols="2" class="sidebar" :class="{closed: !sidebar}">
                         <sidebar :stops="filteredStops" :getIcon="getIcon" @focus-stop="onFocusStop"
                                  @generate-list="onGenerateList" @open-filter="onOpenFilter"></sidebar>
                     </b-col>
@@ -66,6 +67,8 @@
             Sidebar
         },
         data() {
+            const clientWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+
             return {
                 loading: true,
                 stops: [],
@@ -75,7 +78,8 @@
                 focusedStopId: null,
                 questSubmitMode: false,
                 preferences: null,
-                visibility: null
+                visibility: null,
+                sidebar: (clientWidth >= 768)
             }
         },
         mounted() {
@@ -128,6 +132,9 @@
             },
             onOpenFilter() {
                 this.$refs.filteringModal.show();
+            },
+            onToggleSidebar() {
+                this.sidebar = !this.sidebar;
             }
         },
         computed: {
@@ -153,7 +160,14 @@
 
                 return this.stops[this.focusedStopId];
             }
-        }
+        },
+        watch: {
+            sidebar() {
+                this.$nextTick(() => {
+                    this.$refs.map.invalidateSize();
+                })
+            }
+        },
     }
 </script>
 
@@ -187,6 +201,11 @@
         transition: width .3s;
         transition-timing-function: ease;
         padding: 0;
+        &.closed {
+            min-width: 0;
+            flex: 0;
+            padding: 0;
+        }
     }
 
     .loading-indicator {
