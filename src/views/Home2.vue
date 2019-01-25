@@ -22,7 +22,8 @@
                 </b-row>
                 <b-row class="row-body">
                     <b-col class="p-0">
-                        <stop-map ref="map" :stops="filteredStops" :getIcon="getIcon" :sidebar="sidebar" @focus-stop="onFocusStop"
+                        <stop-map ref="map" :stops="filteredStops" :getIcon="getIcon" :sidebar="sidebar"
+                                  @focus-stop="onFocusStop"
                                   @toggle-sidebar="onToggleSidebar"></stop-map>
                     </b-col>
                     <b-col cols="2" class="sidebar" :class="{closed: !sidebar}">
@@ -88,6 +89,7 @@
                 this.loadStopData(),
             ])
                 .then(this.initializePreferences)
+                .then(this.initializeMetrics)
                 .then(() => {
                     this.loading = false;
                 });
@@ -99,7 +101,6 @@
                     const userData = responseData ? new User(responseData) : null;
                     this.$auth.setUser(userData);
                 } catch (_) {
-                    console.log("User loading error, setting null");
                     this.$auth.setUser(null);
                 }
             },
@@ -115,6 +116,11 @@
             async initializePreferences() {
                 this.preferences = await UserPreferencesManager.make(this);
                 this.visibility = new QuestVisibilityManager(this.preferences);
+            },
+            async initializeMetrics() {
+                if (this.$auth.check()) {
+                    this.$ga.set('userId', this.$auth.id);
+                }
             },
             getIcon(icon_code) {
                 if (icon_code in icons) {
