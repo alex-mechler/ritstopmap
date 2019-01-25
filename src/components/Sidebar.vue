@@ -7,7 +7,7 @@
                         <a href="#" class="mr-2" @click.prevent="$emit('generate-list')">
                             <i class="fab fa-discord"></i>
                         </a>
-                        <a href="#" class="mr-2" @click.prevent="">
+                        <a href="#" class="mr-2" @click.prevent="$emit('open-filter')">
                             <i class="fas fa-filter"></i>
                         </a>
                     </span>

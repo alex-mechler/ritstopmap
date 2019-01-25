@@ -19,7 +19,7 @@
     import moment from 'moment';
 
     export default {
-        name: "ListGeneratorModal.vue",
+        name: "ListGeneratorModal",
         props: ['stops', 'quests'],
         methods: {
             show() {

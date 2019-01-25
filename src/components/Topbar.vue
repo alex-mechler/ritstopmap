@@ -10,10 +10,10 @@
             <b-navbar-nav class="ml-auto" v-if="loading">
             </b-navbar-nav>
 
-            <b-navbar-nav class="ml-auto" v-else-if="user.hasOwnProperty('username')">
+            <b-navbar-nav class="ml-auto" v-else-if="$auth.check()">
                 <b-nav-text class="avatar-text mr-5">
-                    <img :src="discordAvatar" class="rounded-circle mr-1" alt="User Avatar">
-                    {{ user.username }}
+                    <img :src="$auth.user.avatar_url" class="rounded-circle mr-1" alt="User Avatar">
+                    {{ $auth.user.username }}
                 </b-nav-text>
                 <b-nav-item :href="authUrl('/api/auth/logout')"><i class="fas fa-sign-out-alt"></i> Logout
                 </b-nav-item>
@@ -39,7 +39,7 @@
 
     export default {
         name: "Header",
-        props: ['loading', 'user'],
+        props: ['loading'],
         components: {
             bNavbar,
             bNavbarToggle,
@@ -52,11 +52,6 @@
         methods: {
             authUrl(path) {
                 return this.$config.login_base + path;
-            }
-        },
-        computed: {
-            discordAvatar() {
-                return `https://cdn.discordapp.com/avatars/${this.user.discord_id}/${this.user.avatar}.png?size=32`
             }
         }
     }

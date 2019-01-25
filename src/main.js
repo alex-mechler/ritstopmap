@@ -6,6 +6,7 @@ import VueAnalytics from 'vue-analytics'
 import bugsnag from '@bugsnag/js'
 import bugsnagVue from '@bugsnag/plugin-vue'
 import Notifications from 'vue-notification'
+import AuthManager from './auth/AuthManager'
 
 import './bootstrap'
 
@@ -28,7 +29,6 @@ Vue.prototype.$config = config;
 
 Vue.config.productionTip = false;
 
-
 Vue.mixin(global_mixin);
 
 Vue.use(VueAnalytics, {
@@ -40,6 +40,8 @@ Vue.use(VueAnalytics, {
 });
 
 Vue.use(Notifications);
+
+Vue.prototype.$auth = new AuthManager();
 
 // Bugsnag
 const bugsnagClient = bugsnag('4e6f1bfb86d0d586d78c7a2e95deef79');

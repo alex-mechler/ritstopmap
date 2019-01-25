@@ -1,5 +1,6 @@
 import axios from 'axios';
 import config from './config'
+import Vue from "vue";
 
 axios.defaults.baseURL = config.api_root;
 
@@ -13,14 +14,19 @@ axios.interceptors.response.use(response => {
     return Promise.reject(error);
 });
 
+Vue.prototype.$http = options => {
+    if (options !== undefined) {
+        return axios(options)
+    }
+
+    return axios
+};
+
 export default {
     methods: {
         request(options) {
-            if (options !== undefined) {
-                return axios(options)
-            }
-
-            return axios
+            // Maintained for legacy purposes
+            return this.$http(options);
         }
     }
 };

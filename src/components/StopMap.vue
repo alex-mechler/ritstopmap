@@ -18,6 +18,7 @@
 
 <script>
     import {LMap, LTileLayer, LMarker, LIcon, LControl} from 'vue2-leaflet';
+    import 'leaflet/dist/leaflet.css'
 
     export default {
         name: "Map",
