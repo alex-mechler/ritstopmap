@@ -14,7 +14,8 @@ import './bootstrap'
 import './assets/style.scss';
 
 // BUG https://github.com/Leaflet/Leaflet/issues/4968
-import { L } from 'vue2-leaflet';
+import {L} from 'vue2-leaflet';
+
 delete L.Icon.Default.prototype._getIconUrl;
 
 L.Icon.Default.mergeOptions({
@@ -25,19 +26,22 @@ L.Icon.Default.mergeOptions({
 
 // Global Configuration
 import config from './config';
+
 Vue.prototype.$config = config;
 
 Vue.config.productionTip = false;
 
 Vue.mixin(global_mixin);
 
-Vue.use(VueAnalytics, {
-    id: config.tracking_id,
-    router,
-    debug: {
-        sendHitTask: config.environment === 'production'
-    }
-});
+if (config.tracking_id) {
+    Vue.use(VueAnalytics, {
+        id: config.tracking_id,
+        router,
+        debug: {
+            sendHitTask: config.environment === 'production'
+        }
+    });
+}
 
 Vue.use(Notifications);
 
@@ -48,6 +52,8 @@ const bugsnagClient = bugsnag('4e6f1bfb86d0d586d78c7a2e95deef79');
 bugsnagClient.use(bugsnagVue, Vue);
 
 new Vue({
-  router,
-  render: function (h) { return h(App) }
+    router,
+    render: function (h) {
+        return h(App)
+    }
 }).$mount('#app');
