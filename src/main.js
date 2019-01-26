@@ -49,7 +49,8 @@ Vue.prototype.$auth = new AuthManager();
 const bugsnagClient = bugsnag({
     apiKey: config.bugsnag_id,
     notifyReleaseStages: ['production'],
-    releaseStage: config.environment
+    releaseStage: config.environment,
+    appVersion: config.version
 });
 bugsnagClient.use(bugsnagVue, Vue);
 Vue.prototype.$bugsnag = bugsnagClient;

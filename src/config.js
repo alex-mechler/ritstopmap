@@ -3,5 +3,6 @@ export default {
     bugsnag_id: process.env.VUE_APP_BUGSNAG_KEY || false,
     environment: process.env.NODE_ENV,
     api_root: process.env.VUE_APP_API_ROOT || '',
-    login_base: process.env.VUE_APP_LOGIN_BASE || ''
+    login_base: process.env.VUE_APP_LOGIN_BASE || '',
+    version: '2.0.1'
 }
