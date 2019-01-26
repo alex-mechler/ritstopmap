@@ -15,12 +15,12 @@
                     <img :src="$auth.user.avatar_url" class="rounded-circle mr-1" alt="User Avatar">
                     {{ $auth.user.username }}
                 </b-nav-text>
-                <b-nav-item :href="authUrl('/api/auth/logout')"><i class="fas fa-sign-out-alt"></i> Logout
+                <b-nav-item @click="onLogout" :href="authUrl('/api/auth/logout')"><i class="fas fa-sign-out-alt"></i> Logout
                 </b-nav-item>
             </b-navbar-nav>
 
             <b-navbar-nav class="ml-auto" v-else>
-                <b-nav-item :href="authUrl('/api/auth/login')"><i class="fab fa-discord"></i> Login with Discord
+                <b-nav-item @click="onLogin" :href="authUrl('/api/auth/login')"><i class="fab fa-discord"></i> Login with Discord
                 </b-nav-item>
             </b-navbar-nav>
 
@@ -52,6 +52,22 @@
         methods: {
             authUrl(path) {
                 return this.$config.login_base + path;
+            },
+            onLogin() {
+                this.$ga.event({
+                    eventCategory: 'Auth',
+                    eventAction: 'login',
+                    transport: 'beacon'
+                });
+                return true;
+            },
+            onLogout() {
+                this.$ga.event({
+                    eventCategory: 'Auth',
+                    eventAction: 'logout',
+                    transport: 'beacon'
+                });
+                return true;
             }
         }
     }

@@ -84,6 +84,9 @@
                     stop: this.stop.id
                 }).then(response => {
                     this.setQuest(this.stop, quest);
+
+                    this.$ga.event('Stop', 'report');
+
                     this.hide();
                     this.$notify({
                         group: 'main',

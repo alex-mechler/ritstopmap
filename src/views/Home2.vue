@@ -119,7 +119,18 @@
             },
             async initializeMetrics() {
                 if (this.$auth.check()) {
+                    const user = this.$auth.user;
+
+                    console.log(user);
+
+                    this.$bugsnag.user = {
+                        id: this.$auth.id,
+                        name: user.username,
+                        email: user.email
+                    };
+
                     this.$ga.set('userId', this.$auth.id);
+                    this.$ga.event('Auth', 'set-user');
                 }
             },
             getIcon(icon_code) {

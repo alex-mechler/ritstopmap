@@ -33,23 +33,26 @@ Vue.config.productionTip = false;
 
 Vue.mixin(global_mixin);
 
-if (config.tracking_id) {
-    Vue.use(VueAnalytics, {
-        id: config.tracking_id,
-        router,
-        debug: {
-            sendHitTask: config.environment === 'production'
-        }
-    });
-}
+Vue.use(VueAnalytics, {
+    id: config.tracking_id,
+    router,
+    debug: {
+        sendHitTask: config.environment === 'production'
+    }
+});
 
 Vue.use(Notifications);
 
 Vue.prototype.$auth = new AuthManager();
 
 // Bugsnag
-const bugsnagClient = bugsnag('4e6f1bfb86d0d586d78c7a2e95deef79');
+const bugsnagClient = bugsnag({
+    apiKey: config.bugsnag_id,
+    notifyReleaseStages: ['production'],
+    releaseStage: config.environment
+});
 bugsnagClient.use(bugsnagVue, Vue);
+Vue.prototype.$bugsnag = bugsnagClient;
 
 new Vue({
     router,

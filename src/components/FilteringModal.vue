@@ -47,6 +47,7 @@
         methods: {
             show() {
                 this.$refs.filterModal.show();
+                this.$ga.event('Filters', 'open-modal');
             },
             hide() {
                 this.$refs.filterModal.hide();
