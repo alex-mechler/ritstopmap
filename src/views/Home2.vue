@@ -121,8 +121,6 @@
                 if (this.$auth.check()) {
                     const user = this.$auth.user;
 
-                    console.log(user);
-
                     this.$bugsnag.user = {
                         id: this.$auth.id,
                         name: user.username,
