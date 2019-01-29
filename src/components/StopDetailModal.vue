@@ -60,7 +60,7 @@
         data() {
             return {
                 submitMode: false,
-                selectedQuest: null,
+                selectedQuest: -1,
                 loading: false,
                 error: null,
                 stop: null
@@ -73,7 +73,7 @@
             },
             hide() {
                 this.submitMode = false;
-                this.selectedQuest = null;
+                this.selectedQuest = -1;
                 this.loading = false;
                 this.error = null;
                 this.stop = null;
@@ -136,7 +136,7 @@
                 }).value();
 
                 options.unshift({
-                    value: null,
+                    value: -1,
                     text: ''
                 });
 
