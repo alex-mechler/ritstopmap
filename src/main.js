@@ -7,6 +7,7 @@ import bugsnag from '@bugsnag/js'
 import bugsnagVue from '@bugsnag/plugin-vue'
 import Notifications from 'vue-notification'
 import AuthManager from './auth/AuthManager'
+import EventBus from './EventBus'
 
 import './bootstrap'
 
@@ -54,6 +55,9 @@ const bugsnagClient = bugsnag({
 });
 bugsnagClient.use(bugsnagVue, Vue);
 Vue.prototype.$bugsnag = bugsnagClient;
+
+// Event Bus
+Vue.prototype.$eventBus = EventBus;
 
 new Vue({
     router,

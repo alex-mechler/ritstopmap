@@ -12,26 +12,15 @@
             </b-container>
         </template>
         <template v-else>
-            <notifications position="bottom left" group="main"></notifications>
-            <b-container fluid class="container-main">
-                <b-row class="row-header">
-                    <b-col cols="12" class="header">
-                        <topbar :loading="loading"></topbar>
-                    </b-col>
-                    <b-col cols="12" class="loading-indicator bg-primary"></b-col>
-                </b-row>
-                <b-row class="row-body">
-                    <b-col class="p-0">
-                        <stop-map ref="map" :stops="filteredStops" :getIcon="getIcon" :sidebar="sidebar"
-                                  @focus-stop="onFocusStop"
-                                  @toggle-sidebar="onToggleSidebar"></stop-map>
-                    </b-col>
-                    <b-col cols="2" class="sidebar" :class="{closed: !sidebar}">
-                        <sidebar :stops="filteredStops" :getIcon="getIcon" @focus-stop="onFocusStop"
-                                 @generate-list="onGenerateList" @open-filter="onOpenFilter"></sidebar>
-                    </b-col>
-                </b-row>
-            </b-container>
+            <b-col class="p-0">
+                <stop-map ref="map" :stops="filteredStops" :getIcon="getIcon" :sidebar="sidebar"
+                          @focus-stop="onFocusStop"
+                          @toggle-sidebar="onToggleSidebar"></stop-map>
+            </b-col>
+            <b-col cols="2" class="sidebar" :class="{closed: !sidebar}">
+                <sidebar :stops="filteredStops" :getIcon="getIcon" @focus-stop="onFocusStop"
+                         @generate-list="onGenerateList" @open-filter="onOpenFilter"></sidebar>
+            </b-col>
 
             <stop-detail-modal ref="focusedStopModal" :quests="quests"
                                :show-submit="$auth.check()"></stop-detail-modal>
@@ -104,13 +93,18 @@
                 }
             },
             async loadStopData() {
-                const questData = (await this.request('quest')).data.result;
+                try {
+                    const questData = (await this.request('quest')).data.result;
 
-                _.each(questData, quest => {
-                    this.quests.push(quest);
-                });
+                    _.each(questData, quest => {
+                        this.quests.push(quest);
+                    });
 
-                this.stops = (await this.request('research')).data.result;
+                    this.stops = (await this.request('research')).data.result;
+                } catch (e) {
+                    this.$eventBus.$emit('fatal-error');
+                    throw e;
+                }
             },
             async initializePreferences() {
                 this.preferences = await UserPreferencesManager.make(this);
@@ -186,28 +180,6 @@
 </script>
 
 <style lang="scss" scoped>
-    .container-main {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        .row-header {
-            flex-shrink: 0;
-        }
-        .row-body {
-            flex-grow: 1;
-        }
-        .loading-helper {
-            display: flex;
-            height: 100%;
-            align-items: center;
-            justify-content: center;
-        }
-    }
-
     .sidebar {
         max-height: 100%;
         overflow-y: auto;
@@ -220,9 +192,5 @@
             flex: 0;
             padding: 0;
         }
-    }
-
-    .loading-indicator {
-        height: 2px;
     }
 </style>

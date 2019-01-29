@@ -7,10 +7,7 @@
 
         <b-collapse is-nav id="nav_collapse">
 
-            <b-navbar-nav class="ml-auto" v-if="loading">
-            </b-navbar-nav>
-
-            <b-navbar-nav class="ml-auto" v-else-if="$auth.check()">
+            <b-navbar-nav class="ml-auto" v-if="$auth.check()">
                 <b-nav-text class="avatar-text mr-5">
                     <img :src="$auth.user.avatar_url" class="rounded-circle mr-1" alt="User Avatar">
                     {{ $auth.user.username }}
@@ -39,7 +36,6 @@
 
     export default {
         name: "Header",
-        props: ['loading'],
         components: {
             bNavbar,
             bNavbarToggle,
