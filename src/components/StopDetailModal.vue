@@ -60,7 +60,7 @@
         data() {
             return {
                 submitMode: false,
-                selectedQuest: -1,
+                selectedQuest: 0,
                 loading: false,
                 error: null,
                 stop: null
@@ -73,7 +73,7 @@
             },
             hide() {
                 this.submitMode = false;
-                this.selectedQuest = -1;
+                this.selectedQuest = 0;
                 this.loading = false;
                 this.error = null;
                 this.stop = null;
@@ -126,7 +126,7 @@
                 }
             },
             questOptions() {
-                const options =  _(this.quests).map((quest, key) => {
+                return  _(this.quests).map((quest, key) => {
                     return {
                         value: key,
                         text: `${quest.quest} (${quest.reward})`
@@ -134,13 +134,6 @@
                 }).sortBy(q => {
                     return q.text;
                 }).value();
-
-                options.unshift({
-                    value: -1,
-                    text: ''
-                });
-
-                return options;
             }
         }
     }
