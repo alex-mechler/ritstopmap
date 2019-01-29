@@ -33,7 +33,7 @@
                 </b-row>
             </b-container>
 
-            <stop-detail-modal ref="focusedStopModal" :stop="focusedStop" :quests="quests"
+            <stop-detail-modal ref="focusedStopModal" :quests="quests"
                                :show-submit="$auth.check()"></stop-detail-modal>
             <list-generator-modal ref="listGeneratorModal" :stops="stops" :quests="quests"></list-generator-modal>
             <filtering-modal ref="filteringModal" :visibility="visibility" :quests="quests"
@@ -76,7 +76,6 @@
                 quests: [],
                 priorityQuests: [],
                 hiddenQuests: [],
-                focusedStopId: null,
                 questSubmitMode: false,
                 preferences: null,
                 visibility: null,
@@ -139,8 +138,8 @@
                 return icons['icon_unchecked'];
             },
             onFocusStop(stop_vue_id) {
-                this.focusedStopId = stop_vue_id;
-                this.$refs.focusedStopModal.show()
+                const focusedStop = this.getStopById(stop_vue_id);
+                this.$refs.focusedStopModal.show(focusedStop)
             },
             onGenerateList() {
                 this.$refs.listGeneratorModal.show()
@@ -150,6 +149,17 @@
             },
             onToggleSidebar() {
                 this.sidebar = !this.sidebar;
+            },
+            getStopById(id) {
+                if (id === null) {
+                    return null;
+                }
+
+                if (id < 0 || id >= this.stops.length) {
+                    return null;
+                }
+
+                return this.stops[id];
             }
         },
         computed: {
@@ -163,17 +173,6 @@
                         return this.visibility.isVisible(stop.quest_id);
                     })
                     .value();
-            },
-            focusedStop() {
-                if (this.focusedStopId === null) {
-                    return null;
-                }
-
-                if (this.focusedStopId < 0 || this.focusedStopId >= this.stops.length) {
-                    return null;
-                }
-
-                return this.stops[this.focusedStopId];
             }
         },
         watch: {

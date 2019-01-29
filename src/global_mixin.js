@@ -2,9 +2,12 @@ import axios from 'axios';
 import config from './config'
 import Vue from "vue";
 
-axios.defaults.baseURL = config.api_root;
+const instance = axios.create();
 
-axios.interceptors.response.use(response => {
+instance.defaults.baseURL = config.api_root;
+instance.defaults.timeout = 2500;
+
+instance.interceptors.response.use(response => {
     if (response.hasOwnProperty("data") && response.data.hasOwnProperty('err') && response.data.err === true) {
         return Promise.reject(response.data.hasOwnProperty('message') ? response.data.message : null)
     }
@@ -16,10 +19,10 @@ axios.interceptors.response.use(response => {
 
 Vue.prototype.$http = options => {
     if (options !== undefined) {
-        return axios(options)
+        return instance(options)
     }
 
-    return axios
+    return instance
 };
 
 export default {

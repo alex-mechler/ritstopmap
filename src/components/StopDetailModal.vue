@@ -45,10 +45,11 @@
     import bFormSelect from 'bootstrap-vue/es/components/form-select/form-select'
     import bAlert from 'bootstrap-vue/es/components/alert/alert'
     import LoadingIndicator from "./LoadingIndicator";
+    import _ from 'lodash';
 
     export default {
         name: "StopDetailModal",
-        props: ['stop', 'quests', 'showSubmit'],
+        props: ['quests', 'showSubmit'],
         components: {
             LoadingIndicator,
             bForm,
@@ -61,11 +62,13 @@
                 submitMode: false,
                 selectedQuest: null,
                 loading: false,
-                error: null
+                error: null,
+                stop: null
             }
         },
         methods: {
-            show() {
+            show(stop) {
+                this.stop = stop;
                 this.$refs.stopDetail.show();
             },
             hide() {
@@ -73,11 +76,19 @@
                 this.selectedQuest = null;
                 this.loading = false;
                 this.error = null;
+                this.stop = null;
                 this.$refs.stopDetail.hide();
             },
             submitForm() {
                 this.loading = true;
+                this.error = null;
                 const quest = this.quests[this.selectedQuest];
+
+                if (!_.isObject(quest)) {
+                    this.loading = false;
+                    this.error = "You must select a quest.";
+                    return;
+                }
 
                 this.request().post('research', {
                     quest: quest.id,
@@ -115,7 +126,7 @@
                 }
             },
             questOptions() {
-                return _(this.quests).map((quest, key) => {
+                const options =  _(this.quests).map((quest, key) => {
                     return {
                         value: key,
                         text: `${quest.quest} (${quest.reward})`
@@ -123,6 +134,13 @@
                 }).sortBy(q => {
                     return q.text;
                 }).value();
+
+                options.unshift({
+                    value: null,
+                    text: ''
+                });
+
+                return options;
             }
         }
     }
