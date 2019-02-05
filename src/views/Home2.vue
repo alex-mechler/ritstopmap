@@ -1,15 +1,12 @@
 <template>
-    <div>
+    <div class="d-flex w-100">
         <template v-if="loading">
-            <b-container fluid class="container-main">
-                <div class="loading-helper">
-                    <div>
-                        <loading-indicator></loading-indicator>
-                        <h5 class="mt-3">Loading...</h5>
-                    </div>
+            <b-col class="d-flex align-items-center justify-content-center" cols="12">
+                <div>
+                    <loading-indicator></loading-indicator>
+                    <h5 class="mt-3">Loading...</h5>
                 </div>
-
-            </b-container>
+            </b-col>
         </template>
         <template v-else>
             <b-col class="p-0">
@@ -39,10 +36,7 @@
     import _ from 'lodash';
     import StopDetailModal from "../components/StopDetailModal";
     import ListGeneratorModal from "../components/ListGeneratorModal"
-    import User from '../auth/User'
-    import UserPreferencesManager from "../preferences/UserPreferencesManager";
     import FilteringModal from "../components/FilteringModal"
-    import QuestVisibilityManager from "../preferences/QuestVisibilityManager";
     import LoadingIndicator from '../components/LoadingIndicator';
 
     export default {
@@ -66,32 +60,18 @@
                 priorityQuests: [],
                 hiddenQuests: [],
                 questSubmitMode: false,
-                preferences: null,
-                visibility: null,
-                sidebar: (clientWidth >= 768)
+                sidebar: (clientWidth >= 768),
+                visibility: null
             }
         },
         mounted() {
-            Promise.all([
-                this.loadUserData(),
-                this.loadStopData(),
-            ])
-                .then(this.initializePreferences)
-                .then(this.initializeMetrics)
+            this.loadStopData()
+                .then(this.initializeServices)
                 .then(() => {
                     this.loading = false;
                 });
         },
         methods: {
-            async loadUserData() {
-                try {
-                    const responseData = (await this.request('user')).data.result;
-                    const userData = responseData ? new User(responseData) : null;
-                    this.$auth.setUser(userData);
-                } catch (_) {
-                    this.$auth.setUser(null);
-                }
-            },
             async loadStopData() {
                 try {
                     const questData = (await this.request('quest')).data.result;
@@ -106,23 +86,9 @@
                     throw e;
                 }
             },
-            async initializePreferences() {
-                this.preferences = await UserPreferencesManager.make(this);
-                this.visibility = new QuestVisibilityManager(this.preferences);
-            },
-            async initializeMetrics() {
-                if (this.$auth.check()) {
-                    const user = this.$auth.user;
-
-                    this.$bugsnag.user = {
-                        id: this.$auth.id,
-                        name: user.username,
-                        email: user.email
-                    };
-
-                    this.$ga.set('userId', this.$auth.id);
-                    this.$ga.event('Auth', 'set-user');
-                }
+            async initializeServices() {
+                this.visibility = await this.$services.container.QuestVisibility;
+                console.log('b');
             },
             getIcon(icon_code) {
                 if (icon_code in icons) {
@@ -180,6 +146,14 @@
 </script>
 
 <style lang="scss" scoped>
+    .container-home {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
     .sidebar {
         max-height: 100%;
         overflow-y: auto;

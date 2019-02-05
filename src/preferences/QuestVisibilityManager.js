@@ -6,6 +6,12 @@ export default class QuestVisibilityManager {
         this._hiddenQuests = new Set(_.isArray(this._preferences.data.hiddenQuests) ? this._preferences.data.hiddenQuests : [])
     }
 
+    static async make(preferencesContract) {
+        const preferences = await preferencesContract;
+        return new QuestVisibilityManager(preferences);
+    }
+
+
     async showQuest(id) {
         this._hiddenQuests.delete(id);
         return this.saveData();

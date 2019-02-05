@@ -8,6 +8,9 @@ import bugsnagVue from '@bugsnag/plugin-vue'
 import Notifications from 'vue-notification'
 import AuthManager from './auth/AuthManager'
 import EventBus from './EventBus'
+import LoadingIndicator from './components/LoadingIndicator'
+import AsynchronousService from './support/AsynchronousService'
+import VueClipboard from 'vue-clipboard2'
 
 import './bootstrap'
 
@@ -27,6 +30,9 @@ L.Icon.Default.mergeOptions({
 
 // Global Configuration
 import config from './config';
+import Bottle from "bottlejs";
+import UserPreferencesManager from "./preferences/UserPreferencesManager";
+import QuestVisibilityManager from "./preferences/QuestVisibilityManager";
 
 Vue.prototype.$config = config;
 
@@ -59,8 +65,26 @@ Vue.prototype.$bugsnag = bugsnagClient;
 // Event Bus
 Vue.prototype.$eventBus = EventBus;
 
+// Vue Clipboard
+Vue.use(VueClipboard)
+
+// Service Container
+const services = new Bottle();
+Vue.prototype.$services = services;
+services.factory('Preferences', AsynchronousService(UserPreferencesManager, 'Vue'));
+services.factory('QuestVisibility', AsynchronousService(QuestVisibilityManager, 'Preferences'));
+
+// Loading Component
+Vue.component('LoadingIndicator', LoadingIndicator);
+
 new Vue({
     router,
+    beforeCreate() {
+        console.log('oof');
+        this.$services.factory('Vue', () => {
+            return this;
+        });
+    },
     render: function (h) {
         return h(App)
     }
