@@ -1,6 +1,7 @@
 <template>
     <b-container>
         <h1 class="my-3">Raid Card Creator</h1>
+        <p><i class="fas fa-exclamation-triangle"></i> This tool won't create the raid card automatically, you still have to copy and paste the command into Discord.</p>
         <b-form>
             <b-form-radio-group v-model="hatched">
                 <b-form-row class="mb-3">
