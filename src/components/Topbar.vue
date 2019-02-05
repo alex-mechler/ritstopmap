@@ -1,7 +1,7 @@
 <template>
     <b-navbar toggleable="md">
 
-        <b-navbar-brand href="#">RIT PokeStop Map</b-navbar-brand>
+        <b-navbar-brand :to="{ name: 'home' }">RIT PokeStop Map</b-navbar-brand>
 
         <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
