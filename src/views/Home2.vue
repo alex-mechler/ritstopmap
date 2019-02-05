@@ -1,5 +1,5 @@
 <template>
-    <div class="d-flex w-100">
+    <div class="d-flex w-100 h-100">
         <template v-if="loading">
             <b-col class="d-flex align-items-center justify-content-center" cols="12">
                 <div>

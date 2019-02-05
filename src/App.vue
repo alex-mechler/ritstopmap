@@ -114,6 +114,7 @@
         .row-body {
             flex-grow: 1;
             position: relative;
+            min-height: 0;
         }
     }
 

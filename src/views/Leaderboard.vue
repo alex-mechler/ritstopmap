@@ -129,8 +129,9 @@
 
 <style lang="scss" scoped>
     .scrollable {
-        overflow-y: scroll;
+        overflow-y: auto;
         width: 100%;
+        height: 100%;
     }
 
     table {
