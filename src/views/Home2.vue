@@ -88,7 +88,6 @@
             },
             async initializeServices() {
                 this.visibility = await this.$services.container.QuestVisibility;
-                console.log('b');
             },
             getIcon(icon_code) {
                 if (icon_code in icons) {

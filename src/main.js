@@ -80,7 +80,6 @@ Vue.component('LoadingIndicator', LoadingIndicator);
 new Vue({
     router,
     beforeCreate() {
-        console.log('oof');
         this.$services.factory('Vue', () => {
             return this;
         });
