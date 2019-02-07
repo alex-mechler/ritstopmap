@@ -4,5 +4,5 @@ export default {
     environment: process.env.NODE_ENV,
     api_root: process.env.VUE_APP_API_ROOT || '',
     login_base: process.env.VUE_APP_LOGIN_BASE || '',
-    version: '2.1.2'
+    version: '2.1.3'
 }

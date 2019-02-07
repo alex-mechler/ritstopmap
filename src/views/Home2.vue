@@ -1,5 +1,5 @@
 <template>
-    <div class="d-flex w-100 h-100">
+    <div class="d-flex w-100 mxh-100">
         <template v-if="loading">
             <b-col class="d-flex align-items-center justify-content-center" cols="12">
                 <div>
@@ -166,5 +166,9 @@
             flex: 0;
             padding: 0;
         }
+    }
+
+    .mxh-100 {
+        max-height: 100%;
     }
 </style>
