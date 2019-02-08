@@ -7,7 +7,7 @@
 
         <b-collapse is-nav id="nav_collapse">
             <b-navbar-nav>
-                <b-nav-item :to="{ name: 'leaderboard' }">Leaderboard</b-nav-item>
+                <b-nav-item :to="{ name: 'leaderboard.seasonal' }">Leaderboard</b-nav-item>
                 <b-nav-item :to="{ name: 'raid_card_creator' }">Raid Card Creator</b-nav-item>
             </b-navbar-nav>
 
