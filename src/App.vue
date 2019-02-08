@@ -88,7 +88,11 @@
                         email: user.email
                     };
 
-                    this.$ga.set('userId', this.$auth.id);
+                    this.$ga.set({
+                        'userId': this.$auth.id,
+                        'dimension1': !user.visible,
+                        'dimension2': this.$auth.id
+                    });
                     this.$ga.event('Auth', 'set-user');
                 }
             },
