@@ -2,15 +2,15 @@
     <div class="sidebar-inner">
         <div class="mb-2">
             {{ stops.length }} Locations
+            <template v-if="stops.length < totalStopCount">(filtered from {{ totalStopCount }})</template>
             <span class="float-right">
-                        <!--<i class="fas fa-search mr-2"></i>-->
-                        <a href="#" class="mr-2" @click.prevent="$emit('generate-list')">
-                            <i class="fab fa-discord"></i>
-                        </a>
-                        <a href="#" class="mr-2" @click.prevent="$emit('open-filter')">
-                            <i class="fas fa-filter"></i>
-                        </a>
-                    </span>
+                <a href="#" class="mr-2" @click.prevent="$emit('open-filter')">
+                    <i class="fas fa-filter"></i>
+                </a>
+                <!--<a href="#" class="mr-2" @click.prevent="$emit('open-settings')">
+                    <i class="fas fa-cog"></i>
+                </a>-->
+            </span>
         </div>
         <div v-for="stop in stops" :v-key="stop.id" class="media" @click="$emit('focus-stop', stop._vue_key)">
             <div class="quest-icon"
@@ -27,7 +27,7 @@
 <script>
     export default {
         name: "Sidebar",
-        props: ['stops', 'getIcon']
+        props: ['stops', 'getIcon', 'totalStopCount']
     }
 </script>
 

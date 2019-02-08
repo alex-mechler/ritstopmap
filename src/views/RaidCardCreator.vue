@@ -45,7 +45,8 @@
                                           v-model="remaining"
                                           type="number"
                                           max="60"
-                                          min="0"></b-form-input>
+                                          min="0"
+                                          @change="onChange"></b-form-input>
                         </b-form-group>
                     </b-col>
                 </b-form-row>
@@ -111,12 +112,21 @@
                 gym: 0,
                 level: 5,
                 remaining: 59,
-                boss: ""
+                boss: "",
+                dispatchedEvent: false
             }
         },
         methods: {
             onClickCopy() {
                 this.$copyText(this.commandOutput);
+            },
+            onChange() {
+                if (this.dispatchedEvent) {
+                    return;
+                }
+
+                this.dispatchedEvent = true;
+                this.$ga.event('RaidCards', 'created-card');
             }
         },
         computed: {

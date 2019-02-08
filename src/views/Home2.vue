@@ -14,8 +14,8 @@
                           @focus-stop="onFocusStop"
                           @toggle-sidebar="onToggleSidebar"></stop-map>
             </b-col>
-            <b-col cols="2" class="sidebar" :class="{closed: !sidebar}">
-                <sidebar :stops="filteredStops" :getIcon="getIcon" @focus-stop="onFocusStop"
+            <b-col class="sidebar" :class="{closed: !sidebar}">
+                <sidebar :stops="filteredStops" :getIcon="getIcon" :total-stop-count="stops.length" @focus-stop="onFocusStop"
                          @generate-list="onGenerateList" @open-filter="onOpenFilter"></sidebar>
             </b-col>
 
@@ -156,12 +156,14 @@
     .sidebar {
         max-height: 100%;
         overflow-y: auto;
-        min-width: 250px;
+        width: calc(100vw - 60px);
+        max-width: 300px;
+        flex: 0 0 calc(100vw - 60px);
         transition: width .3s;
         transition-timing-function: ease;
         padding: 0;
         &.closed {
-            min-width: 0;
+            width: 0;
             flex: 0;
             padding: 0;
         }

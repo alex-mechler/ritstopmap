@@ -16,12 +16,14 @@
                     <img :src="$auth.user.avatar_url" class="rounded-circle mr-1" alt="User Avatar">
                     {{ $auth.user.username }}
                 </b-nav-text>
-                <b-nav-item @click="onLogout" :href="authUrl('/api/auth/logout')"><i class="fas fa-sign-out-alt"></i> Logout
+                <b-nav-item @click="onLogout" :href="authUrl('/api/auth/logout')"><i class="fas fa-sign-out-alt"></i>
+                    Logout
                 </b-nav-item>
             </b-navbar-nav>
 
             <b-navbar-nav class="ml-auto" v-else>
-                <b-nav-item @click="onLogin" :href="authUrl('/api/auth/login')"><i class="fab fa-discord"></i> Login with Discord
+                <b-nav-item @click="onLogin" :href="authUrl('/api/auth/login')"><i class="fab fa-discord"></i> Login
+                    with Discord
                 </b-nav-item>
             </b-navbar-nav>
 

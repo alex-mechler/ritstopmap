@@ -1,5 +1,5 @@
 <template>
-    <l-map class="h-100" ref="map" :zoom="mapZoom" :center="mapCenter">
+    <l-map class="h-100" ref="map" :zoom="mapZoom" :center="mapCenter" :options="{ zoomControl: false }">
         <l-tile-layer url="https://{s}.tile.osm.org/{z}/{x}/{y}.png"
                       :attribution="osm_attribution"></l-tile-layer>
         <l-marker v-for="stop in filteredStops" :key="stop.id" :lat-lng="[stop.loc.x, stop.loc.y]"
@@ -51,6 +51,7 @@
 </script>
 
 <style scoped>
+    /*noinspection CssUnusedSymbol*/
     .btn-leaflet {
         font-size: 12px;
         border-radius: 2px;
