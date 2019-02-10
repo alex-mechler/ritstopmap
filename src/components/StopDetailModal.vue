@@ -22,7 +22,16 @@
             <div v-else>
                 <p class="my-4">Quest: {{ stop.quest }}</p>
                 <p class="my-4">Reward: {{ stop.reward }}</p>
-                <p v-if="showSubmit"><a href="#" @click.prevent="submitMode = true">Incorrect?</a></p>
+                <p v-if="stop.confirmed">
+                    <span class="text-success font-weight-bold">
+                        <i class="fas fa-check-circle text-success"></i> Report Confirmed
+                    </span>
+                    <small class="text-muted" v-b-tooltip title="Quest has been confirmed by an admin">(?)</small>
+                </p>
+                <p v-else-if="showSubmit">
+                    <a href="#" @click.prevent="submitMode = true">Incorrect?</a>
+                </p>
+
             </div>
         </div>
 
@@ -45,6 +54,7 @@
     import bFormSelect from 'bootstrap-vue/es/components/form-select/form-select'
     import bAlert from 'bootstrap-vue/es/components/alert/alert'
     import LoadingIndicator from "./LoadingIndicator";
+    import bTooltip from 'bootstrap-vue/es/directives/tooltip/tooltip'
     import _ from 'lodash';
 
     export default {
@@ -56,6 +66,9 @@
             bFormGroup,
             bFormSelect,
             bAlert,
+        },
+        directives: {
+            bTooltip
         },
         data() {
             return {
@@ -125,7 +138,7 @@
                 }
             },
             questOptions() {
-                return  _(this.quests).map((quest, key) => {
+                return _(this.quests).map((quest, key) => {
                     return {
                         value: key,
                         text: `${quest.quest} (${quest.reward})`
