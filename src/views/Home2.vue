@@ -131,6 +131,7 @@
                     .filter(stop => {
                         return this.visibility.isVisible(stop.quest_id);
                     })
+                    .sortBy(['quest_id'])
                     .value();
             }
         },
