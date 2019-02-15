@@ -11,6 +11,15 @@
                             Hide All
                         </b-button>
                     </b-button-group>
+
+                    <b-button-group class="ml-3">
+                        <b-button @click="prioritizeAll">
+                            Prioritize All
+                        </b-button>
+                        <b-button @click="deprioritizeAll">
+                            Deprioritize All
+                        </b-button>
+                    </b-button-group>
                 </div>
             </div>
         </div>
@@ -33,6 +42,14 @@
                     </b-button>
                     <b-button @click="visibility.showQuest(quest.id)" v-else>
                         <i class="fas fa-eye fa-fw"></i>
+                    </b-button>
+
+                    <b-button @click="visibility.deprioritizeQuest(quest.id)" variant="danger"
+                              v-if="visibility.isPriority(quest.id)">
+                        <i class="fas fa-exclamation fa-fw"></i>
+                    </b-button>
+                    <b-button @click="visibility.prioritizeQuest(quest.id)" v-else>
+                        <i class="fas fa-exclamation fa-fw"></i>
                     </b-button>
                 </b-button-group>
             </div>
@@ -59,6 +76,14 @@
                 return Promise.all(_.map(this.quests, quest => {
                     return this.visibility.hideQuest(quest.id);
                 }));
+            },
+            async prioritizeAll() {
+                return Promise.all(_.map(this.quests, quest => {
+                    return this.visibility.prioritizeQuest(quest.id);
+                }));
+            },
+            deprioritizeAll() {
+                this.visibility.clearPrioritized();
             }
         }
     }

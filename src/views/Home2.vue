@@ -131,7 +131,9 @@
                     .filter(stop => {
                         return this.visibility.isVisible(stop.quest_id);
                     })
-                    .sortBy(['quest_id'])
+                    .sortBy(stop => {
+                        return (this.visibility.isPriority(stop.quest_id) ? '!' : '') + stop.quest;
+                    })
                     .value();
             }
         },

@@ -3,7 +3,8 @@ import _ from 'lodash'
 export default class QuestVisibilityManager {
     constructor(preferences) {
         this._preferences = preferences;
-        this._hiddenQuests = new Set(_.isArray(this._preferences.data.hiddenQuests) ? this._preferences.data.hiddenQuests : [])
+        this._hiddenQuests = new Set(_.isArray(this._preferences.data.hiddenQuests) ? this._preferences.data.hiddenQuests : []);
+        this._priorityQuests = new Set(_.isArray(this._preferences.data.priorityQuests) ? this._preferences.data.priorityQuests : []);
     }
 
     static async make(preferencesContract) {
@@ -22,12 +23,31 @@ export default class QuestVisibilityManager {
         return this.saveData();
     }
 
+    async prioritizeQuest(id) {
+        this._priorityQuests.add(id);
+        return this.saveData();
+    }
+
+    async deprioritizeQuest(id) {
+        this._priorityQuests.delete(id);
+        return this.saveData();
+    }
+
     isVisible(id) {
         return !this._hiddenQuests.has(id);
     }
 
+    isPriority(id) {
+        return this._priorityQuests.has(id);
+    }
+
     async clear() {
         this._hiddenQuests.clear();
+        return this.saveData();
+    }
+
+    async clearPrioritized() {
+        this._priorityQuests.clear();
         return this.saveData();
     }
 
@@ -37,6 +57,7 @@ export default class QuestVisibilityManager {
         }
 
         this._preferences.data.hiddenQuests = Array.from(this._hiddenQuests);
+        this._preferences.data.priorityQuests = Array.from(this._priorityQuests);
         return this._preferences.save();
     }
 }
