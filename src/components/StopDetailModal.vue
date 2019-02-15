@@ -31,7 +31,9 @@
                 <p v-else-if="showSubmit">
                     <a href="#" @click.prevent="submitMode = true">Incorrect?</a>
                 </p>
-
+                <p v-else>
+                    Incorrect? Login to report this stop!
+                </p>
             </div>
         </div>
 
