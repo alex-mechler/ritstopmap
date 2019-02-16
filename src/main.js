@@ -33,6 +33,7 @@ import config from './config';
 import Bottle from "bottlejs";
 import UserPreferencesManager from "./preferences/UserPreferencesManager";
 import QuestVisibilityManager from "./preferences/QuestVisibilityManager";
+import CommunityDayManager from './support/CommunityDayManager';
 
 Vue.prototype.$config = config;
 
@@ -73,6 +74,7 @@ const services = new Bottle();
 Vue.prototype.$services = services;
 services.factory('Preferences', AsynchronousService(UserPreferencesManager, 'Vue'));
 services.factory('QuestVisibility', AsynchronousService(QuestVisibilityManager, 'Preferences'));
+services.service('CommunityDay', CommunityDayManager);
 
 // Loading Component
 Vue.component('LoadingIndicator', LoadingIndicator);

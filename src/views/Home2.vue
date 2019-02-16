@@ -24,6 +24,18 @@
             <list-generator-modal ref="listGeneratorModal" :stops="stops" :quests="quests"></list-generator-modal>
             <filtering-modal ref="filteringModal" :visibility="visibility" :quests="quests"
                              :getIcon="getIcon"></filtering-modal>
+
+            <div class="community-day-overlay" v-if="isCommunityDay">
+                <div class="d-flex align-items-center justify-content-center h-100">
+                    <div class="card mx-3">
+                        <div class="card-body text-center">
+                            <img class="mb-3" src="../assets/closed-sign.png">
+                            <h4>It's Community Day!</h4>
+                            <p>The usual quests have all been replaced with special community day quests. Check back after {{ communityDayEndTime.format('h:mma') }} for the usual quest map.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </template>
     </div>
 </template>
@@ -52,6 +64,9 @@
         },
         data() {
             const clientWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+            const communityDay = this.$services.container.CommunityDay;
+
+            console.log(this.$config);
 
             return {
                 loading: true,
@@ -61,10 +76,18 @@
                 hiddenQuests: [],
                 questSubmitMode: false,
                 sidebar: (clientWidth >= 768),
-                visibility: null
+                visibility: null,
+                isCommunityDay: this.$config.community_day_enabled && communityDay.isCommunityDayHours(),
+                communityDayEndTime: communityDay.endTime
             }
         },
         mounted() {
+            if (this.isCommunityDay) {
+                this.loading = false;
+                this.sidebar = false;
+                return;
+            }
+
             this.loadStopData()
                 .then(this.initializeServices)
                 .then(() => {
@@ -174,5 +197,18 @@
 
     .mxh-100 {
         max-height: 100%;
+    }
+
+    .community-day-overlay {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 1000;
+        .card {
+            max-width: 400px;
+        }
     }
 </style>
