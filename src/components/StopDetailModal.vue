@@ -20,6 +20,10 @@
             </div>
 
             <div v-else>
+                <b-alert v-if="stop.quest === 'Catch a Magikarp or Wailmer'" variant="danger" show>
+                    <h4><i class="fas fa-exclamation-triangle"></i> Watch out, Trainer!</h4>
+                    <p class="mb-0">We've hearing reports that this task may crash your game! You may want to skip this one, just to be safe.</p>
+                </b-alert>
                 <p class="my-4">Quest: {{ stop.quest }}</p>
                 <p class="my-4">Reward: {{ stop.reward }}</p>
                 <p v-if="stop.confirmed">
