@@ -2548,5 +2548,20 @@
     "url": "https://cdn.jsdelivr.net/gh/alex-mechler/ritstopmap/icons/karp_hound.png",
     "height": 32,
     "width": 32
+  },
+  "icon_mankey_machop": {
+    "url": "https://cdn.jsdelivr.net/gh/alex-mechler/ritstopmap/icons/mankey_machop.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_poliwag_vulpix": {
+    "url": "https://cdn.jsdelivr.net/gh/alex-mechler/ritstopmap/icons/poliwag_vulpix.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_snubbull_eggs": {
+    "url": "https://cdn.jsdelivr.net/gh/alex-mechler/ritstopmap/icons/snubbull_eggs.png",
+    "height": 32,
+    "width": 32
   }
 }
