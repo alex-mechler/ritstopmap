@@ -2543,5 +2543,10 @@
     "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/Item_1202.png",
     "height": 32,
     "width": 32
+  },
+  "icon_karp_hound": {
+    "url": "https://cdn.jsdelivr.net/gh/alex-mechler/ritstopmap/icons/karp_hound.png",
+    "height": 32,
+    "width": 32
   }
 }
