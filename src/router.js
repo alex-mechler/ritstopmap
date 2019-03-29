@@ -4,6 +4,7 @@ import Home2 from './views/Home2'
 import Leaderboard from './views/Leaderboard'
 import LeaderboardInner from './views/LeaderboardInner'
 import RaidCardCreator from './views/RaidCardCreator'
+import IconTester from './views/IconTester'
 
 Vue.use(Router);
 
@@ -40,6 +41,11 @@ export default new Router({
             path: '/raid_card_creator',
             name: 'raid_card_creator',
             component: RaidCardCreator
+        },
+        {
+            path: '/icons',
+            name: 'icons',
+            component: IconTester
         }
     ]
 })

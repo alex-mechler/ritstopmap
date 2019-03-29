@@ -2568,5 +2568,60 @@
     "url": "https://cdn.jsdelivr.net/gh/alex-mechler/ritstopmap/icons/oakface.png",
     "height": 32,
     "width": 28
+  },
+  "icon_razzberry": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/Item_0701.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_raidpass": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/Item_1401.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_challenge": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/btn_challenge.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_type_electric": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/Badge_Type_Electric_01.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_type_bug": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/Badge_Type_Bug_01.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_sp_nice_multi": {
+    "url": "https://cdn.jsdelivr.net/gh/alex-mechler/ritstopmap/icons/nice_multi.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_sp_great_multi": {
+    "url": "https://cdn.jsdelivr.net/gh/alex-mechler/ritstopmap/icons/great_multi.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_sp_stop": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/btn_pokestop.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_weather_clear": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/weatherIcon_large_clearDay.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_weather_rain": {
+    "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/weatherIcon_large_rainDay.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_sp_curveball": {
+    "url": "https://cdn.jsdelivr.net/gh/alex-mechler/ritstopmap/icons/curveball.png",
+    "height": 32,
+    "width": 32
   }
 }
