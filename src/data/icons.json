@@ -2564,6 +2564,11 @@
     "height": 32,
     "width": 32
   },
+  "icon_omanyte_kabuto": {
+    "url": "https://cdn.jsdelivr.net/gh/alex-mechler/ritstopmap/icons/omanyte_kabuto.png",
+    "height": 32,
+    "width": 32
+  },
   "icon_oak_face": {
     "url": "https://cdn.jsdelivr.net/gh/alex-mechler/ritstopmap/icons/oakface.png",
     "height": 32,
