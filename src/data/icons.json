@@ -2564,6 +2564,46 @@
     "height": 32,
     "width": 32
   },
+  "icon_omanyte_kabuto": {
+    "url": "https://cdn.jsdelivr.net/gh/alex-mechler/ritstopmap/icons/omanyte_kabuto.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_eevee_pidgey": {
+    "url": "https://cdn.jsdelivr.net/gh/alex-mechler/ritstopmap/icons/eevee_pidgey.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_exeggcute_spoink": {
+    "url": "https://cdn.jsdelivr.net/gh/alex-mechler/ritstopmap/icons/exeggcute_spoink.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_gastly_lileep_anorith": {
+    "url": "https://cdn.jsdelivr.net/gh/alex-mechler/ritstopmap/icons/gastly_lileep_anorith.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_magikarp_teddiursa": {
+    "url": "https://cdn.jsdelivr.net/gh/alex-mechler/ritstopmap/icons/magikarp_teddiursa.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_mankey_makuhita": {
+    "url": "https://cdn.jsdelivr.net/gh/alex-mechler/ritstopmap/icons/mankey_makuhita.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_plusle_minun": {
+    "url": "https://cdn.jsdelivr.net/gh/alex-mechler/ritstopmap/icons/plusle_minun.png",
+    "height": 32,
+    "width": 32
+  },
+  "icon_voltorb_geodude": {
+    "url": "https://cdn.jsdelivr.net/gh/alex-mechler/ritstopmap/icons/voltorb_geodude.png",
+    "height": 32,
+    "width": 32
+  },
   "icon_oak_face": {
     "url": "https://cdn.jsdelivr.net/gh/alex-mechler/ritstopmap/icons/oakface.png",
     "height": 32,
