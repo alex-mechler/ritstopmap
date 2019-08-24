@@ -2623,5 +2623,10 @@
     "url": "https://cdn.jsdelivr.net/gh/alex-mechler/ritstopmap/icons/curveball.png",
     "height": 32,
     "width": 32
+  },
+  "icon_exeggutor_alola": {
+    "url": "https://cdn.jsdelivr.net/gh/msikma/pokesprite/icons/pokemon/regular/exeggutor-alola.png",
+    "height": 30,
+    "width": 40
   }
 }
