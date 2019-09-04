@@ -24,10 +24,10 @@
     "height": 32,
     "width": 32
   },
-  "icon_nanab_berry" : {
+  "icon_nanab_berry": {
     "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/Item_0703.png",
     "height": 32,
-    "width: 32
+    "width": 32
   },
   "icon_golden_razzberry": {
     "url": "https://cdn.jsdelivr.net/gh/ZeChrales/PogoAssets/static_assets/png/Item_0706.png",
