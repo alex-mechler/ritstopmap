@@ -147,10 +147,10 @@
                 return _(this.quests).map((quest, key) => {
                     return {
                         value: key,
-                        text: `${quest.quest} (${quest.reward})`
+                        text: `${quest.reward} (${quest.quest})`
                     }
                 }).sortBy(q => {
-                    return q.text;
+                    return q.reward;
                 }).value();
             }
         }
