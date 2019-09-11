@@ -150,7 +150,7 @@
                         text: `${quest.reward} (${quest.quest})`
                     }
                 }).sortBy(q => {
-                    return q.reward;
+                    return q.text;
                 }).value();
             }
         }
